@@ -4,7 +4,7 @@ import { isVec2LikeArray } from "./is-vec2-like-array";
 import { isVec2LikeObject } from "./is-vec2-like-object";
 
 /**
- * Check whether two vectors are exactly equal to default precision.
+ * Check whether two vectors are exactly equal to system precision.
  *
  * @param target - Target vector.
  * @param value - Value vector.

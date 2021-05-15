@@ -211,7 +211,7 @@ ___
 
 • `Const` **VEC2\_UP**: [*Vec2Readonly*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2readonly)
 
-Normalized Vec2 pointing down-up
+Normalized Vec2 pointing up
 
 Defined in: constants/vec2-up.ts:4
 
@@ -231,7 +231,7 @@ ___
 
 • `Const` **VEC2\_UP\_RIGHT**: [*Vec2Readonly*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2readonly)
 
-Normalized Vec2 pointing down-right
+Normalized Vec2 pointing up-right
 
 Defined in: constants/vec2-up-right.ts:5
 
@@ -415,7 +415,7 @@ Calculate whether two vectors are approximately equal.
 
 - Whether the vectors are approximately equal or not.
 
-Defined in: fn/approx.ts:14
+Defined in: fn/approx.ts:15
 
 ___
 
@@ -673,7 +673,7 @@ ___
 
 ▸ **equal**<T, V\>(`target`: T, `value`: V \| *number*): *boolean*
 
-Check whether two vectors are exactly equal to default precision.
+Check whether two vectors are exactly equal to system precision.
 
 #### Type parameters
 

@@ -46,4 +46,4 @@ Old school method
 </script>
 ```
 
-For static usage, ambient type definitions can optionally be referenced here `build/vec2.d.ts`.
+For static usage, ambient type definitions can optionally be referenced here `node_modules/vec2-fn/bin/vec2.d.ts`.

@@ -9,6 +9,7 @@ import { isVec2LikeObject } from "./is-vec2-like-object";
  *
  * @param v1 - First vector for comparison.
  * @param v2 - Second vector for comparison.
+ * @param precision - The precision difference in both values must be below.
  * @returns - Whether the vectors are approximately equal or not.
  */
 export function approx(v1: Vec2Param, v2: Vec2Param, threshold: number = APPROX_THRESHOLD): boolean {
