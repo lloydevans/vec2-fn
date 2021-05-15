@@ -1,0 +1,82 @@
+{
+	"name": "vec2-fn",
+	"version": "0.0.0",
+	"description": "A type-safe set of functions for working with vec2-like objects and arrays.",
+	"main": "bin/cjs/index.js",
+	"module": "bin/es/index.js",
+	"types": "bin/dts/index.d.ts",
+	"scripts": {
+		"start": "npm run test-watch",
+		"test": "npx --no-install jest",
+		"test-watch": "npm run test -- --watch",
+		"test-coverage": "npx jest --collect-coverage",
+		"build": "npm run pre-build && npm run build-es && npm run build-cjs && npm run build-iife && npm run post-build",
+		"build-es": "tsc --outDir bin/es --target es5 --module es2015",
+		"build-cjs": "tsc --outDir bin/cjs  --target es6 --module commonjs",
+		"build-iife": "npx rollup --config rollup.config.js",
+		"watch-es": "npm run build-es -- -w",
+		"watch-cjs": "npm run build-cjs -- -w",
+		"post-build": "node ./build-scripts/post-build.js",
+		"pre-build": "npx --no-install rimraf bin",
+		"docs": "npx --no-install rimraf docs && npm run docs-html && npm run docs-md && npm run docs-coverage && npm run docs-readme",
+		"docs-md": "npx --no-install rimraf docs/md && npx typedoc --options build-scripts/typedoc.md.js --plugin typedoc-plugin-markdown",
+		"docs-html": "npx --no-install rimraf docs && npx typedoc --options build-scripts/typedoc.html.js --plugin none",
+		"docs-coverage": "npm run test-coverage && jest-coverage-badges output \"./docs/assets\"",
+		"docs-readme": "node ./build-scripts/build-readme.js",
+		"eslint": "npx --no-install eslint src/**/*.ts",
+		"version": "npm i && npm run build && npm run docs && git add . -A"
+	},
+	"dependencies": {
+		"tslib": "^2.2.0"
+	},
+	"devDependencies": {
+		"@rollup/plugin-typescript": "^8.2.1",
+		"@types/jest": "^26.0.23",
+		"@typescript-eslint/eslint-plugin": "4.22.1",
+		"@typescript-eslint/parser": "4.22.1",
+		"eslint": "^7.26.0",
+		"jest": "^26.6.3",
+		"jest-coverage-badges": "^1.1.2",
+		"release-it": "^14.6.2",
+		"rollup": "^2.47.0",
+		"rollup-plugin-string": "^3.0.0",
+		"rollup-plugin-terser": "^7.0.2",
+		"ts-expect": "^1.3.0",
+		"ts-jest": "^26.5.6",
+		"typedoc": "^0.20.36",
+		"typedoc-plugin-markdown": "^3.8.0",
+		"typescript": "^4.2.4"
+	},
+	"prettier": {
+		"printWidth": 200,
+		"endOfLine": "auto",
+		"useTabs": true
+	},
+	"files": [
+		"bin/*",
+		"LICENSE",
+		"README.md"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lloydevans/vec2-fn.git"
+	},
+	"keywords": [
+		"vec2",
+		"vector",
+		"math",
+		"maths",
+		"js",
+		"javascript",
+		"ts",
+		"typescript",
+		"functional",
+		"utility"
+	],
+	"author": "Lloyd Evans",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/lloydevans/vec2-fn/issues"
+	},
+	"homepage": "https://github.com/lloydevans/vec2-fn#readme"
+}

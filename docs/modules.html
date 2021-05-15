@@ -1,0 +1,2389 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>vec2-fn</title>
+	<meta name="description" content="Documentation for vec2-fn">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">vec2-fn</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>vec2-fn</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface"><a href="interfaces/vec2.html" class="tsd-kind-icon">Vec2</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#vec2array" class="tsd-kind-icon">Vec2<wbr>Array</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#vec2object" class="tsd-kind-icon">Vec2<wbr>Object</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#vec2param" class="tsd-kind-icon">Vec2<wbr>Param</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#vec2readonly" class="tsd-kind-icon">Vec2<wbr>Readonly</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable"><a href="modules.html#approx_threshold" class="tsd-kind-icon">APPROX_<wbr>THRESHOLD</a></li>
+								<li class="tsd-kind-variable"><a href="modules.html#minus_one" class="tsd-kind-icon">MINUS_<wbr>ONE</a></li>
+								<li class="tsd-kind-variable"><a href="modules.html#one" class="tsd-kind-icon">ONE</a></li>
+								<li class="tsd-kind-variable"><a href="modules.html#precision" class="tsd-kind-icon">PRECISION</a></li>
+								<li class="tsd-kind-variable"><a href="modules.html#vec2_down" class="tsd-kind-icon">VEC2_<wbr>DOWN</a></li>
+								<li class="tsd-kind-variable"><a href="modules.html#vec2_down_left" class="tsd-kind-icon">VEC2_<wbr>DOWN_<wbr>LEFT</a></li>
+								<li class="tsd-kind-variable"><a href="modules.html#vec2_down_right" class="tsd-kind-icon">VEC2_<wbr>DOWN_<wbr>RIGHT</a></li>
+								<li class="tsd-kind-variable"><a href="modules.html#vec2_left" class="tsd-kind-icon">VEC2_<wbr>LEFT</a></li>
+								<li class="tsd-kind-variable"><a href="modules.html#vec2_right" class="tsd-kind-icon">VEC2_<wbr>RIGHT</a></li>
+								<li class="tsd-kind-variable"><a href="modules.html#vec2_up" class="tsd-kind-icon">VEC2_<wbr>UP</a></li>
+								<li class="tsd-kind-variable"><a href="modules.html#vec2_up_left" class="tsd-kind-icon">VEC2_<wbr>UP_<wbr>LEFT</a></li>
+								<li class="tsd-kind-variable"><a href="modules.html#vec2_up_right" class="tsd-kind-icon">VEC2_<wbr>UP_<wbr>RIGHT</a></li>
+								<li class="tsd-kind-variable"><a href="modules.html#zero" class="tsd-kind-icon">ZERO</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#abs" class="tsd-kind-icon">abs</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#add" class="tsd-kind-icon">add</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#angleto" class="tsd-kind-icon">angle<wbr>To</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#approx" class="tsd-kind-icon">approx</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#clamp" class="tsd-kind-icon">clamp</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#copy" class="tsd-kind-icon">copy</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#distance" class="tsd-kind-icon">distance</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#distancesq" class="tsd-kind-icon">distance<wbr>Sq</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#divide" class="tsd-kind-icon">divide</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#dot" class="tsd-kind-icon">dot</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#dotperp" class="tsd-kind-icon">dot<wbr>Perp</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#equal" class="tsd-kind-icon">equal</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#isone" class="tsd-kind-icon">is<wbr>One</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#isvec2likearray" class="tsd-kind-icon">is<wbr>Vec2<wbr>Like<wbr>Array</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#isvec2likeobject" class="tsd-kind-icon">is<wbr>Vec2<wbr>Like<wbr>Object</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#iszero" class="tsd-kind-icon">is<wbr>Zero</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#length" class="tsd-kind-icon">length</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#lengthsq" class="tsd-kind-icon">length<wbr>Sq</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#lerp" class="tsd-kind-icon">lerp</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#max" class="tsd-kind-icon">max</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#min" class="tsd-kind-icon">min</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#multiply" class="tsd-kind-icon">multiply</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#negate" class="tsd-kind-icon">negate</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#normalize" class="tsd-kind-icon">normalize</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#rotate" class="tsd-kind-icon">rotate</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#subtract" class="tsd-kind-icon">subtract</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#toarray" class="tsd-kind-icon">to<wbr>Array</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#toobject" class="tsd-kind-icon">to<wbr>Object</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#zero" class="tsd-kind-icon">zero</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="vec2array" class="tsd-anchor"></a>
+					<h3>Vec2<wbr>Array</h3>
+					<div class="tsd-signature tsd-kind-icon">Vec2<wbr>Array&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in types/vec2-array.ts:2</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Vec2-like array object.</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span> = <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="vec2object" class="tsd-anchor"></a>
+					<h3>Vec2<wbr>Object</h3>
+					<div class="tsd-signature tsd-kind-icon">Vec2<wbr>Object&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in types/vec2-object.ts:4</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Vec2-like object.</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T<span class="tsd-signature-symbol">: </span><a href="interfaces/vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a> = <a href="interfaces/vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="vec2param" class="tsd-anchor"></a>
+					<h3>Vec2<wbr>Param</h3>
+					<div class="tsd-signature tsd-kind-icon">Vec2<wbr>Param<span class="tsd-signature-symbol">:</span> <a href="interfaces/vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#vec2array" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Array</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in types/vec2-param.ts:5</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A Vec2 array or object.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="vec2readonly" class="tsd-anchor"></a>
+					<h3>Vec2<wbr>Readonly</h3>
+					<div class="tsd-signature tsd-kind-icon">Vec2<wbr>Readonly<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in types/vec2-readonly.ts:4</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Readonly Vec2</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="approx_threshold" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> APPROX_<wbr>THRESHOLD</h3>
+					<div class="tsd-signature tsd-kind-icon">APPROX_<wbr>THRESHOLD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1e-8</span><span class="tsd-signature-symbol"> = 0.00000001</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in constants/approx-threshold.ts:2</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Approximate threshold for approx comparison</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="minus_one" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> MINUS_<wbr>ONE</h3>
+					<div class="tsd-signature tsd-kind-icon">MINUS_<wbr>ONE<span class="tsd-signature-symbol">:</span> <a href="modules.html#vec2readonly" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Readonly</a><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in constants/minus-one.ts:4</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Constant readonly Vec2 with both values equalling <code>-1</code></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="one" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ONE</h3>
+					<div class="tsd-signature tsd-kind-icon">ONE<span class="tsd-signature-symbol">:</span> <a href="modules.html#vec2readonly" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Readonly</a><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in constants/one.ts:4</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Constant readonly Vec2 with both values equalling <code>1</code></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="precision" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> PRECISION</h3>
+					<div class="tsd-signature tsd-kind-icon">PRECISION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">11</span><span class="tsd-signature-symbol"> = 11</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in constants/precision.ts:2</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The number of decimal places calculations are made to.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="vec2_down" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> VEC2_<wbr>DOWN</h3>
+					<div class="tsd-signature tsd-kind-icon">VEC2_<wbr>DOWN<span class="tsd-signature-symbol">:</span> <a href="modules.html#vec2readonly" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Readonly</a><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in constants/vec2-down.ts:4</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Normalized Vec2 pointing down</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="vec2_down_left" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> VEC2_<wbr>DOWN_<wbr>LEFT</h3>
+					<div class="tsd-signature tsd-kind-icon">VEC2_<wbr>DOWN_<wbr>LEFT<span class="tsd-signature-symbol">:</span> <a href="modules.html#vec2readonly" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Readonly</a><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in constants/vec2-down-left.ts:5</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Normalized Vec2 pointing down-left</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="vec2_down_right" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> VEC2_<wbr>DOWN_<wbr>RIGHT</h3>
+					<div class="tsd-signature tsd-kind-icon">VEC2_<wbr>DOWN_<wbr>RIGHT<span class="tsd-signature-symbol">:</span> <a href="modules.html#vec2readonly" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Readonly</a><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in constants/vec2-down-right.ts:5</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Normalized Vec2 pointing down-right</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="vec2_left" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> VEC2_<wbr>LEFT</h3>
+					<div class="tsd-signature tsd-kind-icon">VEC2_<wbr>LEFT<span class="tsd-signature-symbol">:</span> <a href="modules.html#vec2readonly" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Readonly</a><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in constants/vec2-left.ts:4</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Normalized Vec2 pointing left</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="vec2_right" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> VEC2_<wbr>RIGHT</h3>
+					<div class="tsd-signature tsd-kind-icon">VEC2_<wbr>RIGHT<span class="tsd-signature-symbol">:</span> <a href="modules.html#vec2readonly" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Readonly</a><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in constants/vec2-right.ts:4</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Normalized Vec2 pointing right</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="vec2_up" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> VEC2_<wbr>UP</h3>
+					<div class="tsd-signature tsd-kind-icon">VEC2_<wbr>UP<span class="tsd-signature-symbol">:</span> <a href="modules.html#vec2readonly" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Readonly</a><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in constants/vec2-up.ts:4</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Normalized Vec2 pointing down-up</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="vec2_up_left" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> VEC2_<wbr>UP_<wbr>LEFT</h3>
+					<div class="tsd-signature tsd-kind-icon">VEC2_<wbr>UP_<wbr>LEFT<span class="tsd-signature-symbol">:</span> <a href="modules.html#vec2readonly" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Readonly</a><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in constants/vec2-up-left.ts:5</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Normalized Vec2 pointing up-left</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="vec2_up_right" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> VEC2_<wbr>UP_<wbr>RIGHT</h3>
+					<div class="tsd-signature tsd-kind-icon">VEC2_<wbr>UP_<wbr>RIGHT<span class="tsd-signature-symbol">:</span> <a href="modules.html#vec2readonly" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Readonly</a><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in constants/vec2-up-right.ts:5</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Normalized Vec2 pointing down-right</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="zero" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ZERO</h3>
+					<div class="tsd-signature tsd-kind-icon">ZERO<span class="tsd-signature-symbol">:</span> <a href="modules.html#vec2readonly" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Readonly</a><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in constants/zero.ts:4</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Constant readonly Vec2 with both values equalling <code>0</code></p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="abs" class="tsd-anchor"></a>
+					<h3>abs</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">abs&lt;T&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+						<li class="tsd-signature tsd-kind-icon">abs&lt;T, D&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, dest<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">D</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/abs.ts:19</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Calculate vec2 absolute value.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #795E26">abs</span><span style="color: #000000">({ </span><span style="color: #001080">x:</span><span style="color: #000000"> -</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #001080">y:</span><span style="color: #000000"> -</span><span style="color: #098658">1</span><span style="color: #000000"> }); </span><span style="color: #008000">// -&gt; { x: 0, y: 0 }</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Target vector.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<ul>
+								<li>A reference to the modified target vector.</li>
+							</ul>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/abs.ts:34</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Calculate vec2 absolute value.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #795E26">abs</span><span style="color: #000000">({ </span><span style="color: #001080">x:</span><span style="color: #000000"> -</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #001080">y:</span><span style="color: #000000"> -</span><span style="color: #098658">1</span><span style="color: #000000"> }); </span><span style="color: #008000">// -&gt; { x: 0, y: 0 }</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>D<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Target vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> dest: <span class="tsd-signature-type">D</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Destination object to store the result.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">D</span></h4>
+							<ul>
+								<li>A reference to the modified destination object.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="add" class="tsd-anchor"></a>
+					<h3>add</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">add&lt;T&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+						<li class="tsd-signature tsd-kind-icon">add&lt;T, V, D&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, dest<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">D</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/add.ts:17</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add vectors together.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #795E26">add</span><span style="color: #000000">({ </span><span style="color: #001080">x:</span><span style="color: #000000"> -</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #001080">y:</span><span style="color: #000000"> -</span><span style="color: #098658">1</span><span style="color: #000000"> }, { </span><span style="color: #001080">x:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #001080">y:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000"> }); </span><span style="color: #008000">// -&gt; { x: 0, y: 0 }</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Target vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The vector to add.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<ul>
+								<li>A reference to the modified target object.</li>
+							</ul>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/add.ts:34</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add vectors together.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">result</span><span style="color: #000000"> = { </span><span style="color: #001080">x:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #001080">y:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000"> };</span>
+
+<span style="color: #795E26">add</span><span style="color: #000000">({ </span><span style="color: #001080">x:</span><span style="color: #000000"> -</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #001080">y:</span><span style="color: #000000"> -</span><span style="color: #098658">1</span><span style="color: #000000"> }, { </span><span style="color: #001080">x:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #001080">y:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000"> }, </span><span style="color: #001080">result</span><span style="color: #000000">); </span><span style="color: #008000">// -&gt; { x: 0, y: 0 }</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>V<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>D<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Target vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">V</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The vector to add.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> dest: <span class="tsd-signature-type">D</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Destination object to store the result.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">D</span></h4>
+							<ul>
+								<li>A reference to the modified destination object.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="angleto" class="tsd-anchor"></a>
+					<h3>angle<wbr>To</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">angle<wbr>To<span class="tsd-signature-symbol">(</span>to<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a>, from<span class="tsd-signature-symbol">?: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/angle-to.ts:14</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Calculate angle.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>to: <a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Vector to calculate to.</p>
+									</div>
+								</li>
+								<li>
+									<h5>from: <a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a><span class="tsd-signature-symbol"> = ...</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Vector to calculate from. Defaults to <code>ZERO</code>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<ul>
+								<li>Number angle result.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="approx" class="tsd-anchor"></a>
+					<h3>approx</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">approx<span class="tsd-signature-symbol">(</span>v1<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a>, v2<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a>, threshold<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/approx.ts:14</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Calculate whether two vectors are approximately equal.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v1: <a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>First vector for comparison.</p>
+									</div>
+								</li>
+								<li>
+									<h5>v2: <a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Second vector for comparison.</p>
+									</div>
+								</li>
+								<li>
+									<h5>threshold: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = ...</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<ul>
+								<li>Whether the vectors are approximately equal or not.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="clamp" class="tsd-anchor"></a>
+					<h3>clamp</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">clamp&lt;T, Min, Max&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, vecMin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Min</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, vecMax<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Max</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+						<li class="tsd-signature tsd-kind-icon">clamp&lt;T, Min, Max, D&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, vecMin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Min</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, vecMax<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Max</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, dest<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">D</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/clamp.ts:14</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Clamp a vector by min and max limits.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>Min<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>Max<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Target object.</p>
+									</div>
+								</li>
+								<li>
+									<h5>vecMin: <span class="tsd-signature-type">Min</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Minimum vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5>vecMax: <span class="tsd-signature-type">Max</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Maximum vector.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<ul>
+								<li>A reference to the modified target object.</li>
+							</ul>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/clamp.ts:24</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Clamp a vector by min and max limits.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>Min<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>Max<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>D<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Target object.</p>
+									</div>
+								</li>
+								<li>
+									<h5>vecMin: <span class="tsd-signature-type">Min</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Minimum vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5>vecMax: <span class="tsd-signature-type">Max</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Maximum vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> dest: <span class="tsd-signature-type">D</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Destination object to store the values.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">D</span></h4>
+							<ul>
+								<li>A reference to the modified destination object.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="copy" class="tsd-anchor"></a>
+					<h3>copy</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">copy&lt;T, D&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, dest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">D</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/copy.ts:13</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Copy one vectors values to another.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>D<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Target to be copied from.</p>
+									</div>
+								</li>
+								<li>
+									<h5>dest: <span class="tsd-signature-type">D</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The destination object.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">D</span></h4>
+							<ul>
+								<li>The destination object reference.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="distance" class="tsd-anchor"></a>
+					<h3>distance</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">distance&lt;F, T&gt;<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">F</span>, to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/distance.ts:11</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the distance between two vectors.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>F<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>from: <span class="tsd-signature-type">F</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>From vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5>to: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>To vector.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<ul>
+								<li>Number distance result.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="distancesq" class="tsd-anchor"></a>
+					<h3>distance<wbr>Sq</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">distance<wbr>Sq&lt;F, T&gt;<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">F</span>, to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/distance-sq.ts:13</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the squared distance between two vectors.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>F<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>from: <span class="tsd-signature-type">F</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>From vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5>to: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>To vector.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<ul>
+								<li>Number distance squared result.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="divide" class="tsd-anchor"></a>
+					<h3>divide</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">divide&lt;T&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+						<li class="tsd-signature tsd-kind-icon">divide&lt;T, V&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, dest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/divide.ts:11</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Divide two vectors.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Target vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The vector to divide by.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<ul>
+								<li>A reference to the modified target object.</li>
+							</ul>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/divide.ts:20</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Divide two vectors.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>V<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Target vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The vector to divide by.</p>
+									</div>
+								</li>
+								<li>
+									<h5>dest: <span class="tsd-signature-type">V</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Destination object to store the result.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">V</span></h4>
+							<ul>
+								<li>A reference to the modified destination object.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="dot" class="tsd-anchor"></a>
+					<h3>dot</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">dot&lt;T, V&gt;<span class="tsd-signature-symbol">(</span>v1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, v2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/dot.ts:13</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Calculate the dot product of two vectors.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>V<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v1: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Vector 1.</p>
+									</div>
+								</li>
+								<li>
+									<h5>v2: <span class="tsd-signature-type">V</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>= Vector 2.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<ul>
+								<li>Number result of the dot product.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="dotperp" class="tsd-anchor"></a>
+					<h3>dot<wbr>Perp</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">dot<wbr>Perp&lt;T, V&gt;<span class="tsd-signature-symbol">(</span>v1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, v2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/dot-perp.ts:13</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Calculate the perpendicular dot product of two vectors.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>V<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v1: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Vector 1.</p>
+									</div>
+								</li>
+								<li>
+									<h5>v2: <span class="tsd-signature-type">V</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>= Vector 2.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<ul>
+								<li>Number result of the perpendicular dot product.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="equal" class="tsd-anchor"></a>
+					<h3>equal</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">equal&lt;T, V&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/equal.ts:13</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check whether two vectors are exactly equal to default precision.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>V<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Target vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">V</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Value vector.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<ul>
+								<li>Boolean result of whether the vectors are equal.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="isone" class="tsd-anchor"></a>
+					<h3>is<wbr>One</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>One&lt;T&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/is-one.ts:11</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check whether a vector is exactly equal to one (1,1).</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Target vector.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<ul>
+								<li>Boolean result of whether the vector is equal to one.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="isvec2likearray" class="tsd-anchor"></a>
+					<h3>is<wbr>Vec2<wbr>Like<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Vec2<wbr>Like<wbr>Array&lt;T&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">never</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/is-vec2-like-array.ts:9</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check whether a value is a vec2-like array.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Input value to check.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">never</span></h4>
+							<ul>
+								<li>Boolean result of whether the input is a vec2-like array.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="isvec2likeobject" class="tsd-anchor"></a>
+					<h3>is<wbr>Vec2<wbr>Like<wbr>Object</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Vec2<wbr>Like<wbr>Object&lt;T&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> extends </span><a href="interfaces/vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">never</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/is-vec2-like-object.ts:11</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check whether a value is a vec2-like object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Input value to check.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> extends </span><a href="interfaces/vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">never</span></h4>
+							<ul>
+								<li>Boolean result of whether the input is a vec2-like object.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="iszero" class="tsd-anchor"></a>
+					<h3>is<wbr>Zero</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Zero&lt;T&gt;<span class="tsd-signature-symbol">(</span>vec1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/is-zero.ts:11</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check whether a vector is exactly equal to zero (0,0).</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>vec1: <span class="tsd-signature-type">T</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<ul>
+								<li>Boolean result of whether the vector is equal to zero.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="length" class="tsd-anchor"></a>
+					<h3>length</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">length&lt;T&gt;<span class="tsd-signature-symbol">(</span>vec<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/length.ts:10</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the length of a vector.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>vec: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The input vector.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<ul>
+								<li>The number result of the vector length.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="lengthsq" class="tsd-anchor"></a>
+					<h3>length<wbr>Sq</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">length<wbr>Sq&lt;T&gt;<span class="tsd-signature-symbol">(</span>vec<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/length-sq.ts:12</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the squared length of a vector.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>vec: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The input vector.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<ul>
+								<li>The number result of the squared vector length.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="lerp" class="tsd-anchor"></a>
+					<h3>lerp</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">lerp&lt;T, V&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span>, k<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+						<li class="tsd-signature tsd-kind-icon">lerp&lt;T, V, D&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span>, k<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, dest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">D</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/lerp.ts:15</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Linear interpolate two vectors.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>V<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Vector A.</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">V</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Vector B.</p>
+									</div>
+								</li>
+								<li>
+									<h5>k: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The amount to interpolate by.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<ul>
+								<li>A reference to the modified target object.</li>
+							</ul>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/lerp.ts:25</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Linear interpolate two vectors.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>V<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>D<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Vector A.</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">V</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Vector B.</p>
+									</div>
+								</li>
+								<li>
+									<h5>k: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The amount to interpolate by.</p>
+									</div>
+								</li>
+								<li>
+									<h5>dest: <span class="tsd-signature-type">D</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Destination object to store the result.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">D</span></h4>
+							<ul>
+								<li>A reference to the modified destination object.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="max" class="tsd-anchor"></a>
+					<h3>max</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">max&lt;T&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, <span class="tsd-signature-symbol">...</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/max.ts:13</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the larger of a set of vectors.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Target vector to store the result. The target objects existing values are included.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>values: <span class="tsd-signature-symbol">(</span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Vectors to be evaluated.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<ul>
+								<li>A reference to the modified target vector.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="min" class="tsd-anchor"></a>
+					<h3>min</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">min&lt;T&gt;<span class="tsd-signature-symbol">(</span>dest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, <span class="tsd-signature-symbol">...</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/min.ts:13</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the larger of a set of vectors.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dest: <span class="tsd-signature-type">T</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>values: <span class="tsd-signature-symbol">(</span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Vectors to be evaluated.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<ul>
+								<li>A reference to the modified target vector.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="multiply" class="tsd-anchor"></a>
+					<h3>multiply</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">multiply&lt;T&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+						<li class="tsd-signature tsd-kind-icon">multiply&lt;T, V, D&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, dest<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">D</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/multiply.ts:11</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Multiply two vectors.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The vector to multiply by.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<ul>
+								<li>A reference to the modified target object.</li>
+							</ul>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/multiply.ts:20</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Multiply two vectors.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>V<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>D<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">V</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The vector to multiply by.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> dest: <span class="tsd-signature-type">D</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Destination object to store the result.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">D</span></h4>
+							<ul>
+								<li>A reference to the modified destination object.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="negate" class="tsd-anchor"></a>
+					<h3>negate</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">negate&lt;T&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+						<li class="tsd-signature tsd-kind-icon">negate&lt;T, D&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, dest<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">D</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/negate.ts:12</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Negate a vector.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target vector.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<ul>
+								<li>A reference to the modified target vector.</li>
+							</ul>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/negate.ts:20</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Calculate vec2 absolute value.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>D<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> dest: <span class="tsd-signature-type">D</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Destination object to store the result.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">D</span></h4>
+							<ul>
+								<li>A reference to the modified destination vector.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="normalize" class="tsd-anchor"></a>
+					<h3>normalize</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">normalize&lt;T&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+						<li class="tsd-signature tsd-kind-icon">normalize&lt;T, D&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, dest<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">D</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/normalize.ts:13</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Normalize a vector.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Target can be vec object or array.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<ul>
+								<li>The modified target object.</li>
+							</ul>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/normalize.ts:21</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Normalize a vector.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>D<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Target can be vec object or array.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> dest: <span class="tsd-signature-type">D</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>destination object to store the result.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">D</span></h4>
+							<ul>
+								<li>A reference to the destination object.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="rotate" class="tsd-anchor"></a>
+					<h3>rotate</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">rotate&lt;T&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, angle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+						<li class="tsd-signature tsd-kind-icon">rotate&lt;T, D&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, angle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, dest<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">D</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/rotate.ts:14</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Rotate a vector around zero point.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>readonly</dt>
+									<dd><ul>
+											<li>A reference to the modified target vector.</li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5>angle: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The amount of rotation to apply in radians.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/rotate.ts:23</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Rotate a vector around zero point.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>readonly</dt>
+									<dd><ul>
+											<li>A reference to the modified destination vector.</li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>D<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5>angle: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The amount of rotation to apply in radians.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> dest: <span class="tsd-signature-type">D</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Optional destination object to store the result.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">D</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="subtract" class="tsd-anchor"></a>
+					<h3>subtract</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">subtract&lt;T&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+						<li class="tsd-signature tsd-kind-icon">subtract&lt;T, V, D&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, dest<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">D</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/subtract.ts:17</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Subtract one vector from another.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #795E26">subtract</span><span style="color: #000000">({ </span><span style="color: #001080">x:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #001080">y:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000"> }, { </span><span style="color: #001080">x:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #001080">y:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000"> }); </span><span style="color: #008000">// -&gt; { x: 0, y: 0 }</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The vector to subtract.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<ul>
+								<li>A reference to the modified target vector.</li>
+							</ul>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/subtract.ts:33</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Subtract one vector from another.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">result</span><span style="color: #000000"> = { </span><span style="color: #001080">x:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #001080">y:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000"> };</span>
+<span style="color: #795E26">subtract</span><span style="color: #000000">({ </span><span style="color: #001080">x:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #001080">y:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000"> }, { </span><span style="color: #001080">x:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #001080">y:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000"> }, </span><span style="color: #001080">result</span><span style="color: #000000">); </span><span style="color: #008000">// -&gt; { x: 0, y: 0 }</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>V<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+								<li>
+									<h4>D<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target vector.</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">V</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The vector to subtract.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> dest: <span class="tsd-signature-type">D</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Destination object to store the result.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">D</span></h4>
+							<ul>
+								<li>A reference to the modified destination vector.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="toarray" class="tsd-anchor"></a>
+					<h3>to<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Array&lt;T&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#vec2array" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Array</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/to-array.ts:12</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert a vec2-like object to an array.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="interfaces/vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#vec2array" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Array</a></h4>
+							<ul>
+								<li>Newly created array.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="toobject" class="tsd-anchor"></a>
+					<h3>to<wbr>Object</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Object&lt;T&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/to-object.ts:12</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert a vec2-like array to an object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a></h4>
+							<ul>
+								<li>Newly created Vec2 object.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="zero" class="tsd-anchor"></a>
+					<h3>zero</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">zero&lt;T&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in fn/zero.ts:12</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set vector to zero.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#vec2param" class="tsd-signature-type" data-tsd-kind="Type alias">Vec2Param</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Target Vec2-like object the values will be written to.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<ul>
+								<li>A reference to the object the result was written to.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="current ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/vec2.html" class="tsd-kind-icon">Vec2</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#vec2array" class="tsd-kind-icon">Vec2<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#vec2object" class="tsd-kind-icon">Vec2<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#vec2param" class="tsd-kind-icon">Vec2<wbr>Param</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#vec2readonly" class="tsd-kind-icon">Vec2<wbr>Readonly</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#approx_threshold" class="tsd-kind-icon">APPROX_<wbr>THRESHOLD</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#minus_one" class="tsd-kind-icon">MINUS_<wbr>ONE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#one" class="tsd-kind-icon">ONE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#precision" class="tsd-kind-icon">PRECISION</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#vec2_down" class="tsd-kind-icon">VEC2_<wbr>DOWN</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#vec2_down_left" class="tsd-kind-icon">VEC2_<wbr>DOWN_<wbr>LEFT</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#vec2_down_right" class="tsd-kind-icon">VEC2_<wbr>DOWN_<wbr>RIGHT</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#vec2_left" class="tsd-kind-icon">VEC2_<wbr>LEFT</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#vec2_right" class="tsd-kind-icon">VEC2_<wbr>RIGHT</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#vec2_up" class="tsd-kind-icon">VEC2_<wbr>UP</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#vec2_up_left" class="tsd-kind-icon">VEC2_<wbr>UP_<wbr>LEFT</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#vec2_up_right" class="tsd-kind-icon">VEC2_<wbr>UP_<wbr>RIGHT</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#zero" class="tsd-kind-icon">ZERO</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#abs" class="tsd-kind-icon">abs</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#add" class="tsd-kind-icon">add</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#angleto" class="tsd-kind-icon">angle<wbr>To</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#approx" class="tsd-kind-icon">approx</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#clamp" class="tsd-kind-icon">clamp</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#copy" class="tsd-kind-icon">copy</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#distance" class="tsd-kind-icon">distance</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#distancesq" class="tsd-kind-icon">distance<wbr>Sq</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#divide" class="tsd-kind-icon">divide</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#dot" class="tsd-kind-icon">dot</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#dotperp" class="tsd-kind-icon">dot<wbr>Perp</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#equal" class="tsd-kind-icon">equal</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#isone" class="tsd-kind-icon">is<wbr>One</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#isvec2likearray" class="tsd-kind-icon">is<wbr>Vec2<wbr>Like<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#isvec2likeobject" class="tsd-kind-icon">is<wbr>Vec2<wbr>Like<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#iszero" class="tsd-kind-icon">is<wbr>Zero</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#length" class="tsd-kind-icon">length</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#lengthsq" class="tsd-kind-icon">length<wbr>Sq</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#lerp" class="tsd-kind-icon">lerp</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#max" class="tsd-kind-icon">max</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#min" class="tsd-kind-icon">min</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#multiply" class="tsd-kind-icon">multiply</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#negate" class="tsd-kind-icon">negate</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#normalize" class="tsd-kind-icon">normalize</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#rotate" class="tsd-kind-icon">rotate</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#subtract" class="tsd-kind-icon">subtract</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#toarray" class="tsd-kind-icon">to<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#toobject" class="tsd-kind-icon">to<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#zero" class="tsd-kind-icon">zero</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
