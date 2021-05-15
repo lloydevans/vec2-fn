@@ -1,4 +1,4 @@
-[vec2-fn - v0.0.0](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md) / Vec2
+[vec2-fn - v0.1.0](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md) / Vec2
 
 # Interface: Vec2
 

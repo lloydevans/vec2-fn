@@ -1,6 +1,6 @@
-vec2-fn - v0.0.0
+vec2-fn - v0.1.0
 
-# vec2-fn - v0.0.0
+# vec2-fn - v0.1.0
 
 ## Table of contents
 

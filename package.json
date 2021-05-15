@@ -1,6 +1,6 @@
 {
 	"name": "vec2-fn",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "A type-safe set of functions for working with vec2-like objects and arrays.",
 	"main": "bin/cjs/index.js",
 	"module": "bin/es/index.js",
