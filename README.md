@@ -31,7 +31,7 @@ equal({ x: 0, y: 0 }, ZERO);
 const vec2 = require("vec2-fn");
 vec2.equal({ x: 0, y: 0 }, vec2.ZERO);
 
-// Import named
+// Assign named
 const { equal, ZERO } = require("vec2-fn");
 equal({ x: 0, y: 0 }, ZERO);
 ```
