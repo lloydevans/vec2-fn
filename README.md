@@ -57,58 +57,58 @@ For static usage, ambient type definitions can optionally be referenced here `no
 
 ### Type aliases
 
-- [Vec2Array](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2array)
-- [Vec2Object](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2object)
-- [Vec2Param](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param)
-- [Vec2Readonly](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2readonly)
+- [Vec2Array](https://lloydevans.github.io/vec2-fn/modules.html#vec2array)
+- [Vec2Object](https://lloydevans.github.io/vec2-fn/modules.html#vec2object)
+- [Vec2Param](https://lloydevans.github.io/vec2-fn/modules.html#vec2param)
+- [Vec2Readonly](https://lloydevans.github.io/vec2-fn/modules.html#vec2readonly)
 
 ### Variables
 
-- [APPROX\_THRESHOLD](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#approx_threshold)
-- [MINUS\_ONE](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#minus_one)
-- [ONE](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#one)
-- [PRECISION](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#precision)
-- [VEC2\_DOWN](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2_down)
-- [VEC2\_DOWN\_LEFT](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2_down_left)
-- [VEC2\_DOWN\_RIGHT](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2_down_right)
-- [VEC2\_LEFT](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2_left)
-- [VEC2\_RIGHT](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2_right)
-- [VEC2\_UP](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2_up)
-- [VEC2\_UP\_LEFT](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2_up_left)
-- [VEC2\_UP\_RIGHT](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2_up_right)
-- [ZERO](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#zero)
+- [APPROX\_THRESHOLD](https://lloydevans.github.io/vec2-fn/modules.html#approx_threshold)
+- [MINUS\_ONE](https://lloydevans.github.io/vec2-fn/modules.html#minus_one)
+- [ONE](https://lloydevans.github.io/vec2-fn/modules.html#one)
+- [PRECISION](https://lloydevans.github.io/vec2-fn/modules.html#precision)
+- [VEC2\_DOWN](https://lloydevans.github.io/vec2-fn/modules.html#vec2_down)
+- [VEC2\_DOWN\_LEFT](https://lloydevans.github.io/vec2-fn/modules.html#vec2_down_left)
+- [VEC2\_DOWN\_RIGHT](https://lloydevans.github.io/vec2-fn/modules.html#vec2_down_right)
+- [VEC2\_LEFT](https://lloydevans.github.io/vec2-fn/modules.html#vec2_left)
+- [VEC2\_RIGHT](https://lloydevans.github.io/vec2-fn/modules.html#vec2_right)
+- [VEC2\_UP](https://lloydevans.github.io/vec2-fn/modules.html#vec2_up)
+- [VEC2\_UP\_LEFT](https://lloydevans.github.io/vec2-fn/modules.html#vec2_up_left)
+- [VEC2\_UP\_RIGHT](https://lloydevans.github.io/vec2-fn/modules.html#vec2_up_right)
+- [ZERO](https://lloydevans.github.io/vec2-fn/modules.html#zero)
 
 ### Functions
 
-- [abs](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#abs)
-- [add](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#add)
-- [angleTo](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#angleto)
-- [approx](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#approx)
-- [clamp](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#clamp)
-- [copy](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#copy)
-- [distance](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#distance)
-- [distanceSq](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#distancesq)
-- [divide](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#divide)
-- [dot](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#dot)
-- [dotPerp](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#dotperp)
-- [equal](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#equal)
-- [isOne](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#isone)
-- [isVec2LikeArray](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#isvec2likearray)
-- [isVec2LikeObject](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#isvec2likeobject)
-- [isZero](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#iszero)
-- [length](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#length)
-- [lengthSq](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#lengthsq)
-- [lerp](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#lerp)
-- [max](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#max)
-- [min](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#min)
-- [multiply](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#multiply)
-- [negate](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#negate)
-- [normalize](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#normalize)
-- [rotate](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#rotate)
-- [subtract](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#subtract)
-- [toArray](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#toarray)
-- [toObject](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#toobject)
-- [zero](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#zero)
+- [abs](https://lloydevans.github.io/vec2-fn/modules.html#abs)
+- [add](https://lloydevans.github.io/vec2-fn/modules.html#add)
+- [angleTo](https://lloydevans.github.io/vec2-fn/modules.html#angleto)
+- [approx](https://lloydevans.github.io/vec2-fn/modules.html#approx)
+- [clamp](https://lloydevans.github.io/vec2-fn/modules.html#clamp)
+- [copy](https://lloydevans.github.io/vec2-fn/modules.html#copy)
+- [distance](https://lloydevans.github.io/vec2-fn/modules.html#distance)
+- [distanceSq](https://lloydevans.github.io/vec2-fn/modules.html#distancesq)
+- [divide](https://lloydevans.github.io/vec2-fn/modules.html#divide)
+- [dot](https://lloydevans.github.io/vec2-fn/modules.html#dot)
+- [dotPerp](https://lloydevans.github.io/vec2-fn/modules.html#dotperp)
+- [equal](https://lloydevans.github.io/vec2-fn/modules.html#equal)
+- [isOne](https://lloydevans.github.io/vec2-fn/modules.html#isone)
+- [isVec2LikeArray](https://lloydevans.github.io/vec2-fn/modules.html#isvec2likearray)
+- [isVec2LikeObject](https://lloydevans.github.io/vec2-fn/modules.html#isvec2likeobject)
+- [isZero](https://lloydevans.github.io/vec2-fn/modules.html#iszero)
+- [length](https://lloydevans.github.io/vec2-fn/modules.html#length)
+- [lengthSq](https://lloydevans.github.io/vec2-fn/modules.html#lengthsq)
+- [lerp](https://lloydevans.github.io/vec2-fn/modules.html#lerp)
+- [max](https://lloydevans.github.io/vec2-fn/modules.html#max)
+- [min](https://lloydevans.github.io/vec2-fn/modules.html#min)
+- [multiply](https://lloydevans.github.io/vec2-fn/modules.html#multiply)
+- [negate](https://lloydevans.github.io/vec2-fn/modules.html#negate)
+- [normalize](https://lloydevans.github.io/vec2-fn/modules.html#normalize)
+- [rotate](https://lloydevans.github.io/vec2-fn/modules.html#rotate)
+- [subtract](https://lloydevans.github.io/vec2-fn/modules.html#subtract)
+- [toArray](https://lloydevans.github.io/vec2-fn/modules.html#toarray)
+- [toObject](https://lloydevans.github.io/vec2-fn/modules.html#toobject)
+- [zero](https://lloydevans.github.io/vec2-fn/modules.html#zero)
 
 ## Type aliases
 
@@ -146,7 +146,7 @@ ___
 
 ### Vec2Param
 
-Ƭ **Vec2Param**: [*Vec2*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/interfaces/vec2.md) \| [*Vec2Array*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2array)
+Ƭ **Vec2Param**: [*Vec2*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/interfaces/vec2.md) \| [*Vec2Array*](https://lloydevans.github.io/vec2-fn/modules.html#vec2array)
 
 A Vec2 array or object.
 
@@ -176,7 +176,7 @@ ___
 
 ### MINUS\_ONE
 
-• `Const` **MINUS\_ONE**: [*Vec2Readonly*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2readonly)
+• `Const` **MINUS\_ONE**: [*Vec2Readonly*](https://lloydevans.github.io/vec2-fn/modules.html#vec2readonly)
 
 Constant readonly Vec2 with both values equalling `-1`
 
@@ -186,7 +186,7 @@ ___
 
 ### ONE
 
-• `Const` **ONE**: [*Vec2Readonly*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2readonly)
+• `Const` **ONE**: [*Vec2Readonly*](https://lloydevans.github.io/vec2-fn/modules.html#vec2readonly)
 
 Constant readonly Vec2 with both values equalling `1`
 
@@ -206,7 +206,7 @@ ___
 
 ### VEC2\_DOWN
 
-• `Const` **VEC2\_DOWN**: [*Vec2Readonly*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2readonly)
+• `Const` **VEC2\_DOWN**: [*Vec2Readonly*](https://lloydevans.github.io/vec2-fn/modules.html#vec2readonly)
 
 Normalized Vec2 pointing down
 
@@ -216,7 +216,7 @@ ___
 
 ### VEC2\_DOWN\_LEFT
 
-• `Const` **VEC2\_DOWN\_LEFT**: [*Vec2Readonly*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2readonly)
+• `Const` **VEC2\_DOWN\_LEFT**: [*Vec2Readonly*](https://lloydevans.github.io/vec2-fn/modules.html#vec2readonly)
 
 Normalized Vec2 pointing down-left
 
@@ -226,7 +226,7 @@ ___
 
 ### VEC2\_DOWN\_RIGHT
 
-• `Const` **VEC2\_DOWN\_RIGHT**: [*Vec2Readonly*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2readonly)
+• `Const` **VEC2\_DOWN\_RIGHT**: [*Vec2Readonly*](https://lloydevans.github.io/vec2-fn/modules.html#vec2readonly)
 
 Normalized Vec2 pointing down-right
 
@@ -236,7 +236,7 @@ ___
 
 ### VEC2\_LEFT
 
-• `Const` **VEC2\_LEFT**: [*Vec2Readonly*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2readonly)
+• `Const` **VEC2\_LEFT**: [*Vec2Readonly*](https://lloydevans.github.io/vec2-fn/modules.html#vec2readonly)
 
 Normalized Vec2 pointing left
 
@@ -246,7 +246,7 @@ ___
 
 ### VEC2\_RIGHT
 
-• `Const` **VEC2\_RIGHT**: [*Vec2Readonly*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2readonly)
+• `Const` **VEC2\_RIGHT**: [*Vec2Readonly*](https://lloydevans.github.io/vec2-fn/modules.html#vec2readonly)
 
 Normalized Vec2 pointing right
 
@@ -256,7 +256,7 @@ ___
 
 ### VEC2\_UP
 
-• `Const` **VEC2\_UP**: [*Vec2Readonly*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2readonly)
+• `Const` **VEC2\_UP**: [*Vec2Readonly*](https://lloydevans.github.io/vec2-fn/modules.html#vec2readonly)
 
 Normalized Vec2 pointing up
 
@@ -266,7 +266,7 @@ ___
 
 ### VEC2\_UP\_LEFT
 
-• `Const` **VEC2\_UP\_LEFT**: [*Vec2Readonly*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2readonly)
+• `Const` **VEC2\_UP\_LEFT**: [*Vec2Readonly*](https://lloydevans.github.io/vec2-fn/modules.html#vec2readonly)
 
 Normalized Vec2 pointing up-left
 
@@ -276,7 +276,7 @@ ___
 
 ### VEC2\_UP\_RIGHT
 
-• `Const` **VEC2\_UP\_RIGHT**: [*Vec2Readonly*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2readonly)
+• `Const` **VEC2\_UP\_RIGHT**: [*Vec2Readonly*](https://lloydevans.github.io/vec2-fn/modules.html#vec2readonly)
 
 Normalized Vec2 pointing up-right
 
@@ -286,7 +286,7 @@ ___
 
 ### ZERO
 
-• `Const` **ZERO**: [*Vec2Readonly*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2readonly)
+• `Const` **ZERO**: [*Vec2Readonly*](https://lloydevans.github.io/vec2-fn/modules.html#vec2readonly)
 
 Constant readonly Vec2 with both values equalling `0`
 
@@ -310,7 +310,7 @@ abs({ x: -1, y: -1 }); // -> { x: 0, y: 0 }
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -338,8 +338,8 @@ abs({ x: -1, y: -1 }); // -> { x: 0, y: 0 }
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `D` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -358,7 +358,7 @@ ___
 
 ### add
 
-▸ **add**<T\>(`target`: T, `value`: [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) \| *number*): T
+▸ **add**<T\>(`target`: T, `value`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*): T
 
 Add vectors together.
 
@@ -372,14 +372,14 @@ add({ x: -1, y: -1 }, { x: 1, y: 1 }); // -> { x: 0, y: 0 }
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `target` | T | Target vector. |
-| `value` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) \| *number* | The vector to add. |
+| `value` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number* | The vector to add. |
 
 **Returns:** T
 
@@ -403,9 +403,9 @@ add({ x: -1, y: -1 }, { x: 1, y: 1 }, result); // -> { x: 0, y: 0 }
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `V` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `D` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `V` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -425,7 +425,7 @@ ___
 
 ### angleTo
 
-▸ **angleTo**(`to`: [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param), `from?`: [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param)): *number*
+▸ **angleTo**(`to`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `from?`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param)): *number*
 
 Calculate angle.
 
@@ -433,8 +433,8 @@ Calculate angle.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `to` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) | Vector to calculate to. |
-| `from` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) | Vector to calculate from. Defaults to `ZERO`. |
+| `to` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | Vector to calculate to. |
+| `from` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | Vector to calculate from. Defaults to `ZERO`. |
 
 **Returns:** *number*
 
@@ -446,7 +446,7 @@ ___
 
 ### approx
 
-▸ **approx**(`v1`: [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param), `v2`: [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param), `threshold?`: *number*): *boolean*
+▸ **approx**(`v1`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `v2`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `threshold?`: *number*): *boolean*
 
 Calculate whether two vectors are approximately equal.
 
@@ -454,8 +454,8 @@ Calculate whether two vectors are approximately equal.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `v1` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) | First vector for comparison. |
-| `v2` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) | Second vector for comparison. |
+| `v1` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | First vector for comparison. |
+| `v2` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | Second vector for comparison. |
 | `threshold` | *number* | - |
 
 **Returns:** *boolean*
@@ -476,9 +476,9 @@ Clamp a vector by min and max limits.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `Min` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `Max` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `Min` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `Max` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -502,10 +502,10 @@ Clamp a vector by min and max limits.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `Min` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `Max` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `D` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `Min` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `Max` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -534,8 +534,8 @@ Copy one vectors values to another.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `D` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -562,8 +562,8 @@ Get the distance between two vectors.
 
 | Name | Type |
 | :------ | :------ |
-| `F` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `F` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -590,8 +590,8 @@ Get the squared distance between two vectors.
 
 | Name | Type |
 | :------ | :------ |
-| `F` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `F` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -610,7 +610,7 @@ ___
 
 ### divide
 
-▸ **divide**<T\>(`target`: T, `value`: [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) \| *number*): T
+▸ **divide**<T\>(`target`: T, `value`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*): T
 
 Divide two vectors.
 
@@ -618,14 +618,14 @@ Divide two vectors.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `target` | T | Target vector. |
-| `value` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) \| *number* | The vector to divide by. |
+| `value` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number* | The vector to divide by. |
 
 **Returns:** T
 
@@ -633,7 +633,7 @@ Divide two vectors.
 
 Defined in: fn/divide.ts:11
 
-▸ **divide**<T, V\>(`target`: T, `value`: [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) \| *number*, `dest`: V): V
+▸ **divide**<T, V\>(`target`: T, `value`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*, `dest`: V): V
 
 Divide two vectors.
 
@@ -641,15 +641,15 @@ Divide two vectors.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `V` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `V` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `target` | T | Target vector. |
-| `value` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) \| *number* | The vector to divide by. |
+| `value` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number* | The vector to divide by. |
 | `dest` | V | Destination object to store the result. |
 
 **Returns:** V
@@ -670,8 +670,8 @@ Calculate the dot product of two vectors.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `V` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `V` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -698,8 +698,8 @@ Calculate the perpendicular dot product of two vectors.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `V` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `V` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -726,8 +726,8 @@ Check whether two vectors are exactly equal to system precision.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `V` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `V` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -754,7 +754,7 @@ Check whether a vector is exactly equal to one (1,1).
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -832,7 +832,7 @@ Check whether a vector is exactly equal to zero (0,0).
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -858,7 +858,7 @@ Get the length of a vector.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -884,7 +884,7 @@ Get the squared length of a vector.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -910,8 +910,8 @@ Linear interpolate two vectors.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `V` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `V` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -935,9 +935,9 @@ Linear interpolate two vectors.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `V` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `D` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `V` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -958,7 +958,7 @@ ___
 
 ### max
 
-▸ **max**<T\>(`target`: T, ...`values`: ([*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) \| *number*)[]): T
+▸ **max**<T\>(`target`: T, ...`values`: ([*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*)[]): T
 
 Returns the larger of a set of vectors.
 
@@ -966,14 +966,14 @@ Returns the larger of a set of vectors.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `target` | T | Target vector to store the result. The target objects existing values are included. |
-| `...values` | ([*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) \| *number*)[] | Vectors to be evaluated. |
+| `...values` | ([*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*)[] | Vectors to be evaluated. |
 
 **Returns:** T
 
@@ -985,7 +985,7 @@ ___
 
 ### min
 
-▸ **min**<T\>(`dest`: T, ...`values`: ([*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) \| *number*)[]): T
+▸ **min**<T\>(`dest`: T, ...`values`: ([*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*)[]): T
 
 Returns the larger of a set of vectors.
 
@@ -993,14 +993,14 @@ Returns the larger of a set of vectors.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `dest` | T | - |
-| `...values` | ([*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) \| *number*)[] | Vectors to be evaluated. |
+| `...values` | ([*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*)[] | Vectors to be evaluated. |
 
 **Returns:** T
 
@@ -1012,7 +1012,7 @@ ___
 
 ### multiply
 
-▸ **multiply**<T\>(`target`: T, `value`: [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) \| *number*): T
+▸ **multiply**<T\>(`target`: T, `value`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*): T
 
 Multiply two vectors.
 
@@ -1020,14 +1020,14 @@ Multiply two vectors.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `target` | T | The target vector. |
-| `value` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) \| *number* | The vector to multiply by. |
+| `value` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number* | The vector to multiply by. |
 
 **Returns:** T
 
@@ -1043,9 +1043,9 @@ Multiply two vectors.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `V` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `D` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `V` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -1073,7 +1073,7 @@ Negate a vector.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -1095,8 +1095,8 @@ Calculate vec2 absolute value.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `D` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -1123,7 +1123,7 @@ Normalize a vector.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -1145,8 +1145,8 @@ Normalize a vector.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `D` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -1175,7 +1175,7 @@ Rotate a vector around zero point.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -1198,8 +1198,8 @@ Rotate a vector around zero point.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `D` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -1217,7 +1217,7 @@ ___
 
 ### subtract
 
-▸ **subtract**<T\>(`target`: T, `value`: [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) \| *number*): T
+▸ **subtract**<T\>(`target`: T, `value`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*): T
 
 Subtract one vector from another.
 
@@ -1231,14 +1231,14 @@ subtract({ x: 1, y: 1 }, { x: 1, y: 1 }); // -> { x: 0, y: 0 }
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `target` | T | The target vector. |
-| `value` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) \| *number* | The vector to subtract. |
+| `value` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number* | The vector to subtract. |
 
 **Returns:** T
 
@@ -1261,9 +1261,9 @@ subtract({ x: 1, y: 1 }, { x: 1, y: 1 }, result); // -> { x: 0, y: 0 }
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `V` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
-| `D` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `V` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
@@ -1283,7 +1283,7 @@ ___
 
 ### toArray
 
-▸ **toArray**<T\>(`target`: T): [*Vec2Array*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2array)
+▸ **toArray**<T\>(`target`: T): [*Vec2Array*](https://lloydevans.github.io/vec2-fn/modules.html#vec2array)
 
 Convert a vec2-like object to an array.
 
@@ -1299,7 +1299,7 @@ Convert a vec2-like object to an array.
 | :------ | :------ |
 | `target` | T |
 
-**Returns:** [*Vec2Array*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2array)
+**Returns:** [*Vec2Array*](https://lloydevans.github.io/vec2-fn/modules.html#vec2array)
 
 - Newly created array.
 
@@ -1343,7 +1343,7 @@ Set vector to zero.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/README.md#vec2param) |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
