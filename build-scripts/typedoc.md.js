@@ -14,7 +14,7 @@ const config = {
 	theme: "default",
 	excludeInternal: true,
 	pretty: true,
-	includeVersion: true,
+	includeVersion: false,
 	gitRemote: "https://github.com/lloydevans/vec2-fn",
 };
 

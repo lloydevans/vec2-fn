@@ -1,4 +1,4 @@
-# vec2-fn - v0.1.0
+# vec2-fn
 [<img src="https://lloydevans.github.io/vec2-fn/assets/badge-functions.svg">](LINK)
 [<img src="https://lloydevans.github.io/vec2-fn/assets/badge-lines.svg">](LINK)
 
