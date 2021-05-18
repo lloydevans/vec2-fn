@@ -3,13 +3,12 @@ import { ERROR_MESSAGES } from "../constants/error-messages";
 import { Vec2 } from "../types/vec2";
 import { Vec2Array } from "../types/vec2-array";
 import { rotate } from "./rotate";
-import { _modoValue } from "./_modo-value";
 import { _toPrecision } from "./_to-precision";
 
 describe(rotate.name, () => {
 	it("should calculate angles", () => {
 		for (let i = 0; i < 100; i++) {
-			const phase = _modoValue(Math.random() * Math.PI * 2, Math.PI);
+			const phase = Math.random() - 0.5 * Math.PI * 2;
 			const rAmount = Math.random() * Math.PI * 0.5;
 			const to = { x: Math.cos(phase), y: Math.sin(phase) };
 			const toR = { x: Math.cos(phase + rAmount), y: Math.sin(phase + rAmount) };
