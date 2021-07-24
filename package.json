@@ -24,7 +24,8 @@
 		"docs-coverage": "npm run test-coverage && jest-coverage-badges output \"./docs/assets\"",
 		"docs-readme": "node ./build-scripts/build-readme.js",
 		"eslint": "npx --no-install eslint src/**/*.ts",
-		"version": "npm i && npm run build && npm run docs && git add . -A"
+		"version": "npm i && npm run build && npm run docs && git add . -A",
+		"release": "release-it"
 	},
 	"dependencies": {
 		"tslib": "^2.2.0"
