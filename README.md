@@ -2,6 +2,10 @@
 [<img src="https://lloydevans.github.io/vec2-fn/assets/badge-functions.svg">](LINK)
 [<img src="https://lloydevans.github.io/vec2-fn/assets/badge-lines.svg">](LINK)
 
+### What's this?
+
+This is a small JS library containing some utility functions for working with vector 2 (like) objects an arrays. The functions are sometimes not pure in the sense that they will modify the vector you provide to them. This allows the reuse of vector object instances and compatibility between different vector class types.
+
 ### Install
 
 ```bash
@@ -58,7 +62,6 @@ For static usage, ambient type definitions can optionally be referenced here `no
 ### Type aliases
 
 - [Vec2Array](https://lloydevans.github.io/vec2-fn/modules.html#vec2array)
-- [Vec2Object](https://lloydevans.github.io/vec2-fn/modules.html#vec2object)
 - [Vec2Param](https://lloydevans.github.io/vec2-fn/modules.html#vec2param)
 - [Vec2Readonly](https://lloydevans.github.io/vec2-fn/modules.html#vec2readonly)
 
@@ -84,6 +87,7 @@ For static usage, ambient type definitions can optionally be referenced here `no
 - [add](https://lloydevans.github.io/vec2-fn/modules.html#add)
 - [angleTo](https://lloydevans.github.io/vec2-fn/modules.html#angleto)
 - [approx](https://lloydevans.github.io/vec2-fn/modules.html#approx)
+- [ceil](https://lloydevans.github.io/vec2-fn/modules.html#ceil)
 - [clamp](https://lloydevans.github.io/vec2-fn/modules.html#clamp)
 - [copy](https://lloydevans.github.io/vec2-fn/modules.html#copy)
 - [distance](https://lloydevans.github.io/vec2-fn/modules.html#distance)
@@ -92,6 +96,7 @@ For static usage, ambient type definitions can optionally be referenced here `no
 - [dot](https://lloydevans.github.io/vec2-fn/modules.html#dot)
 - [dotPerp](https://lloydevans.github.io/vec2-fn/modules.html#dotperp)
 - [equal](https://lloydevans.github.io/vec2-fn/modules.html#equal)
+- [floor](https://lloydevans.github.io/vec2-fn/modules.html#floor)
 - [isOne](https://lloydevans.github.io/vec2-fn/modules.html#isone)
 - [isVec2LikeArray](https://lloydevans.github.io/vec2-fn/modules.html#isvec2likearray)
 - [isVec2LikeObject](https://lloydevans.github.io/vec2-fn/modules.html#isvec2likeobject)
@@ -105,6 +110,7 @@ For static usage, ambient type definitions can optionally be referenced here `no
 - [negate](https://lloydevans.github.io/vec2-fn/modules.html#negate)
 - [normalize](https://lloydevans.github.io/vec2-fn/modules.html#normalize)
 - [rotate](https://lloydevans.github.io/vec2-fn/modules.html#rotate)
+- [round](https://lloydevans.github.io/vec2-fn/modules.html#round)
 - [subtract](https://lloydevans.github.io/vec2-fn/modules.html#subtract)
 - [toArray](https://lloydevans.github.io/vec2-fn/modules.html#toarray)
 - [toObject](https://lloydevans.github.io/vec2-fn/modules.html#toobject)
@@ -125,22 +131,6 @@ Vec2-like array object.
 | `T` | *number*[] | [*number*, *number*] |
 
 Defined in: types/vec2-array.ts:2
-
-___
-
-### Vec2Object
-
-Ƭ **Vec2Object**<T\>: T
-
-Vec2-like object.
-
-#### Type parameters
-
-| Name | Type | Default |
-| :------ | :------ | :------ |
-| `T` | [*Vec2*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/interfaces/vec2.md) | [*Vec2*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/interfaces/vec2.md) |
-
-Defined in: types/vec2-object.ts:4
 
 ___
 
@@ -324,7 +314,7 @@ abs({ x: -1, y: -1 }); // -> { x: 0, y: 0 }
 
 Defined in: fn/abs.ts:19
 
-▸ **abs**<T, D\>(`target`: T, `dest?`: D): D
+▸ **abs**<D\>(`target`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `dest?`: D): D
 
 Calculate vec2 absolute value.
 
@@ -338,14 +328,13 @@ abs({ x: -1, y: -1 }); // -> { x: 0, y: 0 }
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 | `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `target` | T | Target vector. |
+| `target` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | Target vector. |
 | `dest?` | D | Destination object to store the result. |
 
 **Returns:** D
@@ -387,7 +376,7 @@ add({ x: -1, y: -1 }, { x: 1, y: 1 }); // -> { x: 0, y: 0 }
 
 Defined in: fn/add.ts:17
 
-▸ **add**<T, V, D\>(`target`: T, `value`: V \| *number*, `dest?`: D): D
+▸ **add**<D\>(`target`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `value`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*, `dest`: D): D
 
 Add vectors together.
 
@@ -403,17 +392,15 @@ add({ x: -1, y: -1 }, { x: 1, y: 1 }, result); // -> { x: 0, y: 0 }
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
-| `V` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 | `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `target` | T | Target vector. |
-| `value` | V \| *number* | The vector to add. |
-| `dest?` | D | Destination object to store the result. |
+| `target` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | Target vector. |
+| `value` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number* | The vector to add. |
+| `dest` | D | Destination object to store the result. |
 
 **Returns:** D
 
@@ -466,9 +453,58 @@ Defined in: fn/approx.ts:15
 
 ___
 
+### ceil
+
+▸ **ceil**<T\>(`target`: T): T
+
+Ceil the values of a vector.
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | T | The target vector. |
+
+**Returns:** T
+
+- A reference to the modified target vector.
+
+Defined in: fn/ceil.ts:12
+
+▸ **ceil**<D\>(`target`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `dest`: D): D
+
+Ceil the values of a vector.
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | The target vector. |
+| `dest` | D | Destination object to store the result. |
+
+**Returns:** D
+
+- A reference to the modified destination vector.
+
+Defined in: fn/ceil.ts:20
+
+___
+
 ### clamp
 
-▸ **clamp**<T, Min, Max\>(`target`: T, `vecMin`: Min \| *number*, `vecMax`: Max \| *number*): T
+▸ **clamp**<T\>(`target`: T, `vMin`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*, `vMax`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*): T
 
 Clamp a vector by min and max limits.
 
@@ -477,16 +513,14 @@ Clamp a vector by min and max limits.
 | Name | Type |
 | :------ | :------ |
 | `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
-| `Min` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
-| `Max` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `target` | T | Target object. |
-| `vecMin` | Min \| *number* | Minimum vector. |
-| `vecMax` | Max \| *number* | Maximum vector. |
+| `vMin` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number* | Minimum vector. |
+| `vMax` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number* | Maximum vector. |
 
 **Returns:** T
 
@@ -494,7 +528,7 @@ Clamp a vector by min and max limits.
 
 Defined in: fn/clamp.ts:14
 
-▸ **clamp**<T, Min, Max, D\>(`target`: T, `vecMin`: Min \| *number*, `vecMax`: Max \| *number*, `dest?`: D): D
+▸ **clamp**<D\>(`target`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `vMin`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*, `vMax`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*, `dest`: D): D
 
 Clamp a vector by min and max limits.
 
@@ -502,19 +536,16 @@ Clamp a vector by min and max limits.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
-| `Min` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
-| `Max` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 | `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `target` | T | Target object. |
-| `vecMin` | Min \| *number* | Minimum vector. |
-| `vecMax` | Max \| *number* | Maximum vector. |
-| `dest?` | D | Destination object to store the values. |
+| `target` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | Target object. |
+| `vMin` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number* | Minimum vector. |
+| `vMax` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number* | Maximum vector. |
+| `dest` | D | Destination object to store the values. |
 
 **Returns:** D
 
@@ -526,7 +557,7 @@ ___
 
 ### copy
 
-▸ **copy**<T, D\>(`target`: T, `dest`: D): D
+▸ **copy**<D\>(`target`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `dest`: D): D
 
 Copy one vectors values to another.
 
@@ -534,14 +565,13 @@ Copy one vectors values to another.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 | `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `target` | T | Target to be copied from. |
+| `target` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | Target to be copied from. |
 | `dest` | D | The destination object. |
 
 **Returns:** D
@@ -554,23 +584,16 @@ ___
 
 ### distance
 
-▸ **distance**<F, T\>(`from`: F, `to`: T): *number*
+▸ **distance**(`from`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `to`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param)): *number*
 
 Get the distance between two vectors.
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `F` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `from` | F | From vector. |
-| `to` | T | To vector. |
+| `from` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | From vector. |
+| `to` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | To vector. |
 
 **Returns:** *number*
 
@@ -582,23 +605,16 @@ ___
 
 ### distanceSq
 
-▸ **distanceSq**<F, T\>(`from`: F, `to`: T): *number*
+▸ **distanceSq**(`from`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `to`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param)): *number*
 
 Get the squared distance between two vectors.
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `F` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `from` | F | From vector. |
-| `to` | T | To vector. |
+| `from` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | From vector. |
+| `to` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | To vector. |
 
 **Returns:** *number*
 
@@ -633,7 +649,7 @@ Divide two vectors.
 
 Defined in: fn/divide.ts:11
 
-▸ **divide**<T, V\>(`target`: T, `value`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*, `dest`: V): V
+▸ **divide**<D\>(`target`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `value`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*, `dest`: D): D
 
 Divide two vectors.
 
@@ -641,18 +657,17 @@ Divide two vectors.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
-| `V` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `target` | T | Target vector. |
+| `target` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | Target vector. |
 | `value` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number* | The vector to divide by. |
-| `dest` | V | Destination object to store the result. |
+| `dest` | D | Destination object to store the result. |
 
-**Returns:** V
+**Returns:** D
 
 - A reference to the modified destination object.
 
@@ -662,23 +677,16 @@ ___
 
 ### dot
 
-▸ **dot**<T, V\>(`v1`: T, `v2`: V): *number*
+▸ **dot**(`v1`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `v2`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param)): *number*
 
 Calculate the dot product of two vectors.
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
-| `V` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `v1` | T | Vector 1. |
-| `v2` | V | = Vector 2. |
+| `v1` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | Vector 1. |
+| `v2` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | = Vector 2. |
 
 **Returns:** *number*
 
@@ -690,23 +698,16 @@ ___
 
 ### dotPerp
 
-▸ **dotPerp**<T, V\>(`v1`: T, `v2`: V): *number*
+▸ **dotPerp**(`v1`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `v2`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param)): *number*
 
 Calculate the perpendicular dot product of two vectors.
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
-| `V` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `v1` | T | Vector 1. |
-| `v2` | V | = Vector 2. |
+| `v1` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | Vector 1. |
+| `v2` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | = Vector 2. |
 
 **Returns:** *number*
 
@@ -718,23 +719,16 @@ ___
 
 ### equal
 
-▸ **equal**<T, V\>(`target`: T, `value`: V \| *number*): *boolean*
+▸ **equal**(`target`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `value`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*): *boolean*
 
 Check whether two vectors are exactly equal to system precision.
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
-| `V` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `target` | T | Target vector. |
-| `value` | V \| *number* | Value vector. |
+| `target` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | Target vector. |
+| `value` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number* | Value vector. |
 
 **Returns:** *boolean*
 
@@ -744,11 +738,11 @@ Defined in: fn/equal.ts:13
 
 ___
 
-### isOne
+### floor
 
-▸ **isOne**<T\>(`target`: T): *boolean*
+▸ **floor**<T\>(`target`: T): T
 
-Check whether a vector is exactly equal to one (1,1).
+Floor the values of a vector.
 
 #### Type parameters
 
@@ -760,7 +754,50 @@ Check whether a vector is exactly equal to one (1,1).
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `target` | T | Target vector. |
+| `target` | T | The target vector. |
+
+**Returns:** T
+
+- A reference to the modified target vector.
+
+Defined in: fn/floor.ts:12
+
+▸ **floor**<D\>(`target`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `dest`: D): D
+
+Floor the values of a vector.
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | The target vector. |
+| `dest` | D | Destination object to store the result. |
+
+**Returns:** D
+
+- A reference to the modified destination vector.
+
+Defined in: fn/floor.ts:20
+
+___
+
+### isOne
+
+▸ **isOne**(`target`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param)): *boolean*
+
+Check whether a vector is exactly equal to one (1,1).
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | Target vector. |
 
 **Returns:** *boolean*
 
@@ -792,7 +829,7 @@ Check whether a value is a vec2-like array.
 
 - Boolean result of whether the input is a vec2-like array.
 
-Defined in: fn/is-vec2-like-array.ts:9
+Defined in: fn/is-vec2-array.ts:9
 
 ___
 
@@ -818,27 +855,21 @@ Check whether a value is a vec2-like object.
 
 - Boolean result of whether the input is a vec2-like object.
 
-Defined in: fn/is-vec2-like-object.ts:11
+Defined in: fn/is-vec2-object.ts:12
 
 ___
 
 ### isZero
 
-▸ **isZero**<T\>(`vec1`: T): *boolean*
+▸ **isZero**(`vec1`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param)): *boolean*
 
 Check whether a vector is exactly equal to zero (0,0).
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `vec1` | T |
+| `vec1` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 **Returns:** *boolean*
 
@@ -850,21 +881,15 @@ ___
 
 ### length
 
-▸ **length**<T\>(`vec`: T): *number*
+▸ **length**(`vec`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param)): *number*
 
 Get the length of a vector.
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `vec` | T | The input vector. |
+| `vec` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | The input vector. |
 
 **Returns:** *number*
 
@@ -876,21 +901,15 @@ ___
 
 ### lengthSq
 
-▸ **lengthSq**<T\>(`vec`: T): *number*
+▸ **lengthSq**(`vec`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param)): *number*
 
 Get the squared length of a vector.
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `vec` | T | The input vector. |
+| `vec` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | The input vector. |
 
 **Returns:** *number*
 
@@ -927,7 +946,7 @@ Linear interpolate two vectors.
 
 Defined in: fn/lerp.ts:15
 
-▸ **lerp**<T, V, D\>(`target`: T, `value`: V, `k`: *number*, `dest`: D): D
+▸ **lerp**<D\>(`target`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `value`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `k`: *number*, `dest`: D): D
 
 Linear interpolate two vectors.
 
@@ -935,16 +954,14 @@ Linear interpolate two vectors.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
-| `V` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 | `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `target` | T | Vector A. |
-| `value` | V | Vector B. |
+| `target` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | Vector A. |
+| `value` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | Vector B. |
 | `k` | *number* | The amount to interpolate by. |
 | `dest` | D | Destination object to store the result. |
 
@@ -958,26 +975,26 @@ ___
 
 ### max
 
-▸ **max**<T\>(`target`: T, ...`values`: ([*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*)[]): T
+▸ **max**<D\>(`dest`: D, ...`values`: ([*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*)[]): D
 
-Returns the larger of a set of vectors.
+Returns the max x and y of a set of vectors.
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `target` | T | Target vector to store the result. The target objects existing values are included. |
-| `...values` | ([*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*)[] | Vectors to be evaluated. |
+| `dest` | D | - |
+| `...values` | ([*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*)[] | - |
 
-**Returns:** T
+**Returns:** D
 
-- A reference to the modified target vector.
+-
 
 Defined in: fn/max.ts:13
 
@@ -985,26 +1002,26 @@ ___
 
 ### min
 
-▸ **min**<T\>(`dest`: T, ...`values`: ([*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*)[]): T
+▸ **min**<D\>(`dest`: D, ...`values`: ([*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*)[]): D
 
-Returns the larger of a set of vectors.
+Returns the min x and y of a set of vectors.
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+| `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `dest` | T | - |
-| `...values` | ([*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*)[] | Vectors to be evaluated. |
+| `dest` | D | - |
+| `...values` | ([*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*)[] | - |
 
-**Returns:** T
+**Returns:** D
 
-- A reference to the modified target vector.
+-
 
 Defined in: fn/min.ts:13
 
@@ -1035,7 +1052,7 @@ Multiply two vectors.
 
 Defined in: fn/multiply.ts:11
 
-▸ **multiply**<T, V, D\>(`target`: T, `value`: V \| *number*, `dest?`: D): D
+▸ **multiply**<D\>(`target`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `value`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*, `dest`: D): D
 
 Multiply two vectors.
 
@@ -1043,17 +1060,15 @@ Multiply two vectors.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
-| `V` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 | `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `target` | T | The target vector. |
-| `value` | V \| *number* | The vector to multiply by. |
-| `dest?` | D | Destination object to store the result. |
+| `target` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | The target vector. |
+| `value` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number* | The vector to multiply by. |
+| `dest` | D | Destination object to store the result. |
 
 **Returns:** D
 
@@ -1087,23 +1102,22 @@ Negate a vector.
 
 Defined in: fn/negate.ts:12
 
-▸ **negate**<T, D\>(`target`: T, `dest?`: D): D
+▸ **negate**<D\>(`target`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `dest`: D): D
 
-Calculate vec2 absolute value.
+Negate a vector.
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 | `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `target` | T | The target vector. |
-| `dest?` | D | Destination object to store the result. |
+| `target` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | The target vector. |
+| `dest` | D | Destination object to store the result. |
 
 **Returns:** D
 
@@ -1137,7 +1151,7 @@ Normalize a vector.
 
 Defined in: fn/normalize.ts:13
 
-▸ **normalize**<T, D\>(`target`: T, `dest?`: D): D
+▸ **normalize**<D\>(`target`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `dest?`: D): D
 
 Normalize a vector.
 
@@ -1145,14 +1159,13 @@ Normalize a vector.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 | `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `target` | T | Target can be vec object or array. |
+| `target` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | Target can be vec object or array. |
 | `dest?` | D | destination object to store the result. |
 
 **Returns:** D
@@ -1188,7 +1201,7 @@ Rotate a vector around zero point.
 
 Defined in: fn/rotate.ts:14
 
-▸ **rotate**<T, D\>(`target`: T, `angle`: *number*, `dest?`: D): D
+▸ **rotate**<D\>(`target`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `angle`: *number*, `dest?`: D): D
 
 Rotate a vector around zero point.
 
@@ -1198,20 +1211,68 @@ Rotate a vector around zero point.
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 | `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `target` | T | The target vector. |
+| `target` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | The target vector. |
 | `angle` | *number* | The amount of rotation to apply in radians. |
 | `dest?` | D | Optional destination object to store the result. |
 
 **Returns:** D
 
 Defined in: fn/rotate.ts:23
+
+___
+
+### round
+
+▸ **round**<T\>(`target`: T): T
+
+Round the values of a vector.
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | T | The target vector. |
+
+**Returns:** T
+
+- A reference to the modified target vector.
+
+Defined in: fn/round.ts:12
+
+▸ **round**<D\>(`target`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `dest`: D): D
+
+Round the values of a vector.
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | The target vector. |
+| `dest` | D | Destination object to store the result. |
+
+**Returns:** D
+
+- A reference to the modified destination vector.
+
+Defined in: fn/round.ts:20
 
 ___
 
@@ -1246,7 +1307,7 @@ subtract({ x: 1, y: 1 }, { x: 1, y: 1 }); // -> { x: 0, y: 0 }
 
 Defined in: fn/subtract.ts:17
 
-▸ **subtract**<T, V, D\>(`target`: T, `value`: V \| *number*, `dest?`: D): D
+▸ **subtract**<D\>(`target`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param), `value`: [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number*, `dest?`: D): D
 
 Subtract one vector from another.
 
@@ -1261,16 +1322,14 @@ subtract({ x: 1, y: 1 }, { x: 1, y: 1 }, result); // -> { x: 0, y: 0 }
 
 | Name | Type |
 | :------ | :------ |
-| `T` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
-| `V` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 | `D` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `target` | T | The target vector. |
-| `value` | V \| *number* | The vector to subtract. |
+| `target` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) | The target vector. |
+| `value` | [*Vec2Param*](https://lloydevans.github.io/vec2-fn/modules.html#vec2param) \| *number* | The vector to subtract. |
 | `dest?` | D | Destination object to store the result. |
 
 **Returns:** D
@@ -1283,21 +1342,15 @@ ___
 
 ### toArray
 
-▸ **toArray**<T\>(`target`: T): [*Vec2Array*](https://lloydevans.github.io/vec2-fn/modules.html#vec2array)
+▸ **toArray**(`target`: [*Vec2*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/interfaces/vec2.md)): [*Vec2Array*](https://lloydevans.github.io/vec2-fn/modules.html#vec2array)
 
 Convert a vec2-like object to an array.
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | [*Vec2*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/interfaces/vec2.md) |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `target` | T |
+| `target` | [*Vec2*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/interfaces/vec2.md) |
 
 **Returns:** [*Vec2Array*](https://lloydevans.github.io/vec2-fn/modules.html#vec2array)
 
@@ -1309,21 +1362,15 @@ ___
 
 ### toObject
 
-▸ **toObject**<T\>(`target`: T): [*Vec2*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/interfaces/vec2.md)
+▸ **toObject**(`target`: [*Vec2Array*](https://lloydevans.github.io/vec2-fn/modules.html#vec2array)): [*Vec2*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/interfaces/vec2.md)
 
 Convert a vec2-like array to an object.
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | [*number*, *number*] |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `target` | T |
+| `target` | [*Vec2Array*](https://lloydevans.github.io/vec2-fn/modules.html#vec2array) |
 
 **Returns:** [*Vec2*](https://github.com/lloydevans/vec2-fn/blob/main/docs/md/interfaces/vec2.md)
 
