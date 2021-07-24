@@ -1,6 +1,10 @@
 [<img src="https://lloydevans.github.io/vec2-fn/assets/badge-functions.svg">](LINK)
 [<img src="https://lloydevans.github.io/vec2-fn/assets/badge-lines.svg">](LINK)
 
+### What's this?
+
+This is a small JS library containing some utility functions for working with vector 2 (like) objects an arrays. The functions are sometimes not pure in the sense that they will modify the vector you provide to them. This allows the reuse of vector object instances and compatibility between different vector class types.
+
 ### Install
 
 ```bash
