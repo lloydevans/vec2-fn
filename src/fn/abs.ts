@@ -45,10 +45,8 @@ export function abs<D extends Vec2Param>(target: Vec2Param, dest?: D): unknown {
 		throw new TypeError(ERROR_MESSAGES.INV_V2_TARG);
 	}
 
-	if (typeof dest !== "undefined") {
-		if (!isVec2LikeArray(dest) && !isVec2LikeObject(dest)) {
-			throw new TypeError(ERROR_MESSAGES.INV_V2_DEST);
-		}
+	if (typeof dest !== "undefined" && (dest === null || typeof dest !== "object")) {
+		throw new TypeError(ERROR_MESSAGES.INV_V2_DEST);
 	}
 
 	const _dest = dest ?? target;
@@ -56,11 +54,11 @@ export function abs<D extends Vec2Param>(target: Vec2Param, dest?: D): unknown {
 	if (isVec2LikeArray(_dest)) {
 		_dest[0] = Math.abs(tX);
 		_dest[1] = Math.abs(tY);
-	}
-
-	if (isVec2LikeObject(_dest)) {
+	} else if (isVec2LikeObject(_dest)) {
 		_dest.x = Math.abs(tX);
 		_dest.y = Math.abs(tY);
+	} else {
+		throw new TypeError(ERROR_MESSAGES.INV_V2_DEST);
 	}
 
 	return _dest;
