@@ -41,9 +41,8 @@ export { subtract } from "./fn/subtract";
 export { toArray } from "./fn/to-array";
 export { toObject } from "./fn/to-object";
 export { zero } from "./fn/zero";
-export type { Vec2 } from "./types/vec2";
+export type { Vec2, Vec2Object } from "./types/vec2";
 export type { Vec2Array } from "./types/vec2-array";
-export type { Vec2Object } from "./types/vec2-object";
 export type { Vec2Param } from "./types/vec2-param";
 export type { Vec2Readonly } from "./types/vec2-readonly";
 

@@ -1,5 +1,4 @@
-import { Vec2 } from "../types/vec2";
-import { Vec2Object } from "../types/vec2-object";
+import { Vec2, Vec2Object } from "../types/vec2";
 import { Vec2Param } from "../types/vec2-param";
 
 /**
