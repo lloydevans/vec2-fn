@@ -23,8 +23,8 @@ export function _performOperand<T extends Vec2Param>(op: Operand, target: T, val
  * @param dest - Destination object to store the result.
  * @returns - A reference to the destination object.
  */
-export function _performOperand<T extends Vec2Param, V extends Vec2Param>(op: Operand, target: T, value: Vec2Param | number, dest?: V): V;
-export function _performOperand<T extends Vec2Param, V extends Vec2Param>(op: Operand, target: T, value: Vec2Param | number, dest?: V): unknown {
+export function _performOperand<D extends Vec2Param>(op: Operand, target: Vec2Param | number, value: Vec2Param | number, dest?: D): D;
+export function _performOperand<D extends Vec2Param>(op: Operand, target: Vec2Param | number, value: Vec2Param | number, dest?: D): unknown {
 	let tX: number;
 	let tY: number;
 	if (isVec2LikeArray(target)) {

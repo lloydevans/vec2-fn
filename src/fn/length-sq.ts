@@ -9,7 +9,7 @@ import { isVec2LikeObject } from "./is-vec2-like-object";
  * @param vec - The input vector.
  * @returns - The number result of the squared vector length.
  */
-export function lengthSq<T extends Vec2Param>(vec: T): number {
+export function lengthSq(vec: Vec2Param): number {
 	let x: number;
 	let y: number;
 

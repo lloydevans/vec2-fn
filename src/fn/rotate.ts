@@ -20,8 +20,8 @@ export function rotate<T extends Vec2Param>(target: T, angle: number): T;
  * @param dest - Optional destination object to store the result.
  * @readonly - A reference to the modified destination vector.
  */
-export function rotate<T extends Vec2Param, D extends Vec2Param>(target: T, angle: number, dest?: D): D;
-export function rotate<T extends Vec2Param, D extends Vec2Param>(target: T, angle: number, dest?: D): unknown {
+export function rotate<D extends Vec2Param>(target: Vec2Param, angle: number, dest?: D): D;
+export function rotate<D extends Vec2Param>(target: Vec2Param, angle: number, dest?: D): unknown {
 	if (typeof angle !== "number") {
 		throw new TypeError(ERROR_MESSAGES.INV_NUM);
 	}

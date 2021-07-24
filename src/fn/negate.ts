@@ -17,8 +17,8 @@ export function negate<T extends Vec2Param>(target: T): T;
  * @param dest - Destination object to store the result.
  * @returns - A reference to the modified destination vector.
  */
-export function negate<T extends Vec2Param, D extends Vec2Param>(target: T, dest?: D): D;
-export function negate<T extends Vec2Param, D extends Vec2Param>(target: T, dest?: D): unknown {
+export function negate<D extends Vec2Param>(target: Vec2Param, dest: D): D;
+export function negate<D extends Vec2Param>(target: Vec2Param, dest?: D): unknown {
 	let tX: number;
 	let tY: number;
 	if (isVec2LikeArray(target)) {

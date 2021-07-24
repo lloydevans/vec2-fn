@@ -1,5 +1,7 @@
-import { Vec2, Vec2Object } from "../types/vec2";
+import { Vec2 } from "../types/vec2";
 import { Vec2Param } from "../types/vec2-param";
+
+type Vec2Object<T extends Vec2 = Vec2> = T;
 
 /**
  * Check whether a value is a vec2-like object.

@@ -10,7 +10,7 @@ import { isVec2LikeObject } from "./is-vec2-like-object";
  * @param dest - The destination object.
  * @returns - The destination object reference.
  */
-export function copy<T extends Vec2Param, D extends Vec2Param>(target: T, dest: D): D {
+export function copy<D extends Vec2Param>(target: Vec2Param, dest: D): D {
 	let tX: number;
 	let tY: number;
 	if (isVec2LikeObject(target)) {

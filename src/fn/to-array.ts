@@ -9,7 +9,7 @@ import { isVec2LikeObject } from "./is-vec2-like-object";
  * @param vec1 - input vec2-like object.
  * @returns - Newly created array.
  */
-export function toArray<T extends Vec2>(target: T): Vec2Array {
+export function toArray(target: Vec2): Vec2Array {
 	if (isVec2LikeObject(target)) {
 		return [target.x, target.y];
 	} else {

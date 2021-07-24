@@ -17,7 +17,7 @@ export function mod<T extends Vec2Param>(target: T, value: Vec2Param | number): 
  * @param dest - Destination object to store the result.
  * @returns - A reference to the modified destination object.
  */
-export function mod<T extends Vec2Param, V extends Vec2Param, D extends Vec2Param>(target: T, value: V | number, dest?: D): D;
-export function mod<T extends Vec2Param, V extends Vec2Param, D extends Vec2Param>(target: T, value: V | number, dest?: D): unknown {
+export function mod<D extends Vec2Param>(target: Vec2Param, value: Vec2Param | number, dest: D): D;
+export function mod<D extends Vec2Param>(target: Vec2Param, value: Vec2Param | number, dest?: D): unknown {
 	return _performOperand("%", target, value, dest);
 }

@@ -30,7 +30,7 @@ export function subtract<T extends Vec2Param>(target: T, value: Vec2Param | numb
  * subtract({ x: 1, y: 1 }, { x: 1, y: 1 }, result); // -> { x: 0, y: 0 }
  * ```
  */
-export function subtract<T extends Vec2Param, V extends Vec2Param, D extends Vec2Param>(target: T, value: V | number, dest?: D): D;
-export function subtract<T extends Vec2Param, V extends Vec2Param, D extends Vec2Param>(target: T, value: V | number, dest?: D): unknown {
+export function subtract<D extends Vec2Param>(target: Vec2Param, value: Vec2Param | number, dest?: D): D;
+export function subtract<D extends Vec2Param>(target: Vec2Param, value: Vec2Param | number, dest?: D): unknown {
 	return _performOperand("-", target, value, dest);
 }

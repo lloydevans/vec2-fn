@@ -8,6 +8,6 @@ import { equal } from "./equal";
  * @param target - Target vector.
  * @returns - Boolean result of whether the vector is equal to one.
  */
-export function isOne<T extends Vec2Param>(target: T): boolean {
+export function isOne(target: Vec2Param): boolean {
 	return equal(target, ONE);
 }

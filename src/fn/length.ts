@@ -7,6 +7,6 @@ import { lengthSq } from "./length-sq";
  * @param vec - The input vector.
  * @returns - The number result of the vector length.
  */
-export function length<T extends Vec2Param>(vec: T): number {
+export function length(vec: Vec2Param): number {
 	return Math.sqrt(lengthSq(vec));
 }

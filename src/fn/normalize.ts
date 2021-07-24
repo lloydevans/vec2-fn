@@ -18,8 +18,8 @@ export function normalize<T extends Vec2Param>(target: T): T;
  * @param dest - destination object to store the result.
  * @returns - A reference to the destination object.
  */
-export function normalize<T extends Vec2Param, D extends Vec2Param>(target: T, dest?: D): D;
-export function normalize<T extends Vec2Param, D extends Vec2Param>(target: T, dest?: D): unknown {
+export function normalize<D extends Vec2Param>(target: Vec2Param, dest?: D): D;
+export function normalize<D extends Vec2Param>(target: Vec2Param, dest?: D): unknown {
 	let tX: number;
 	let tY: number;
 	if (isVec2LikeArray(target)) {

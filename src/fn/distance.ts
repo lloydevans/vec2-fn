@@ -8,6 +8,6 @@ import { distanceSq } from "./distance-sq";
  * @param to - To vector.
  * @returns - Number distance result.
  */
-export function distance<F extends Vec2Param, T extends Vec2Param>(from: F, to: T): number {
+export function distance(from: Vec2Param, to: Vec2Param): number {
 	return Math.sqrt(distanceSq(from, to));
 }

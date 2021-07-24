@@ -31,8 +31,8 @@ export function abs<T extends Vec2Param>(target: T): T;
  * abs({ x: -1, y: -1 }); // -> { x: 0, y: 0 }
  * ```
  */
-export function abs<T extends Vec2Param, D extends Vec2Param>(target: T, dest?: D): D;
-export function abs<T extends Vec2Param, D extends Vec2Param>(target: T, dest?: D): unknown {
+export function abs<D extends Vec2Param>(target: Vec2Param, dest?: D): D;
+export function abs<D extends Vec2Param>(target: Vec2Param, dest?: D): unknown {
 	let tX: number;
 	let tY: number;
 	if (isVec2LikeObject(target)) {

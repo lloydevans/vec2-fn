@@ -10,7 +10,7 @@ import { isVec2LikeObject } from "./is-vec2-like-object";
  * @param to - To vector.
  * @returns - Number distance squared result.
  */
-export function distanceSq<F extends Vec2Param, T extends Vec2Param>(from: F, to: T): number {
+export function distanceSq(from: Vec2Param, to: Vec2Param): number {
 	let tX: number;
 	let tY: number;
 	if (isVec2LikeArray(from)) {

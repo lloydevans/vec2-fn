@@ -17,7 +17,7 @@ export function multiply<T extends Vec2Param>(target: T, value: Vec2Param | numb
  * @param dest - Destination object to store the result.
  * @returns - A reference to the modified destination object.
  */
-export function multiply<T extends Vec2Param, V extends Vec2Param, D extends Vec2Param>(target: T, value: V | number, dest?: D): D;
-export function multiply<T extends Vec2Param, V extends Vec2Param, D extends Vec2Param>(target: T, value: V | number, dest?: D): unknown {
+export function multiply<D extends Vec2Param>(target: Vec2Param, value: Vec2Param | number, dest: D): D;
+export function multiply<D extends Vec2Param>(target: Vec2Param, value: Vec2Param | number, dest?: D): unknown {
 	return _performOperand("*", target, value, dest);
 }

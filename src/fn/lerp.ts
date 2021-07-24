@@ -22,8 +22,8 @@ export function lerp<T extends Vec2Param, V extends Vec2Param>(target: T, value:
  * @param dest - Destination object to store the result.
  * @returns - A reference to the modified destination object.
  */
-export function lerp<T extends Vec2Param, V extends Vec2Param, D extends Vec2Param>(target: T, value: V, k: number, dest: D): D;
-export function lerp<T extends Vec2Param, V extends Vec2Param, D extends Vec2Param>(target: T, value: V, k: number, dest?: D): unknown {
+export function lerp<D extends Vec2Param>(target: Vec2Param, value: Vec2Param, k: number, dest: D): D;
+export function lerp<D extends Vec2Param>(target: Vec2Param, value: Vec2Param, k: number, dest?: D): unknown {
 	if (typeof k !== "number") {
 		throw new TypeError(ERROR_MESSAGES.INV_NUM);
 	}

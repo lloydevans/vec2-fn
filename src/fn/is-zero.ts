@@ -8,6 +8,6 @@ import { equal } from "./equal";
  * @param target - Target vector.
  * @returns - Boolean result of whether the vector is equal to zero.
  */
-export function isZero<T extends Vec2Param>(vec1: T): boolean {
+export function isZero(vec1: Vec2Param): boolean {
 	return equal(vec1, ZERO);
 }

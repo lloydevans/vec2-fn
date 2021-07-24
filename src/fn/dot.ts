@@ -10,28 +10,28 @@ import { isVec2LikeObject } from "./is-vec2-like-object";
  * @param v2 = Vector 2.
  * @returns - Number result of the dot product.
  */
-export function dot<T extends Vec2Param, V extends Vec2Param>(v1: T, v2: V): number {
+export function dot(v1: Vec2Param, v2: Vec2Param): number {
 	let x1: number;
 	let y1: number;
 	let x2: number;
 	let y2: number;
 
-	if (isVec2LikeArray(v1)) {
-		x1 = v1[0];
-		y1 = v1[1];
-	} else if (isVec2LikeObject(v1)) {
+	if (isVec2LikeObject(v1)) {
 		x1 = v1.x;
 		y1 = v1.y;
+	} else if (isVec2LikeArray(v1)) {
+		x1 = v1[0];
+		y1 = v1[1];
 	} else {
 		throw new TypeError(ERROR_MESSAGES.INV_V2);
 	}
 
-	if (isVec2LikeArray(v2)) {
-		x2 = v2[0];
-		y2 = v2[1];
-	} else if (isVec2LikeObject(v2)) {
+	if (isVec2LikeObject(v2)) {
 		x2 = v2.x;
 		y2 = v2.y;
+	} else if (isVec2LikeArray(v2)) {
+		x2 = v2[0];
+		y2 = v2[1];
 	} else {
 		throw new TypeError(ERROR_MESSAGES.INV_V2);
 	}
