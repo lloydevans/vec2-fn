@@ -39,7 +39,7 @@ export function rotate<D extends Vec2Param>(target: Vec2Param, angle: number, de
 	}
 
 	if (typeof dest !== "undefined") {
-		if (!isVec2Array(dest) && !isVec2Object(dest)) {
+		if (!isVec2Object(dest) && !isVec2Array(dest)) {
 			throw new TypeError(ERROR_MESSAGES.INV_V2_DEST);
 		}
 	}

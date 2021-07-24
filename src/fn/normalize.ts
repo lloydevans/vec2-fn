@@ -22,18 +22,18 @@ export function normalize<D extends Vec2Param>(target: Vec2Param, dest?: D): D;
 export function normalize<D extends Vec2Param>(target: Vec2Param, dest?: D): unknown {
 	let tX: number;
 	let tY: number;
-	if (isVec2Array(target)) {
-		tX = target[0];
-		tY = target[1];
-	} else if (isVec2Object(target)) {
+	if (isVec2Object(target)) {
 		tX = target.x;
 		tY = target.y;
+	} else if (isVec2Array(target)) {
+		tX = target[0];
+		tY = target[1];
 	} else {
 		throw new TypeError(ERROR_MESSAGES.INV_V2_TARG);
 	}
 
 	if (typeof dest !== "undefined") {
-		if (!isVec2Array(dest) && !isVec2Object(dest)) {
+		if (!isVec2Object(dest) && !isVec2Array(dest)) {
 			throw new TypeError(ERROR_MESSAGES.INV_V2_DEST);
 		}
 	}

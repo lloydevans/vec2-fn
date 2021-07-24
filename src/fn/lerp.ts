@@ -30,12 +30,12 @@ export function lerp<D extends Vec2Param>(target: Vec2Param, value: Vec2Param, k
 
 	let tX: number;
 	let tY: number;
-	if (isVec2Array(target)) {
-		tX = target[0];
-		tY = target[1];
-	} else if (isVec2Object(target)) {
+	if (isVec2Object(target)) {
 		tX = target.x;
 		tY = target.y;
+	} else if (isVec2Array(target)) {
+		tX = target[0];
+		tY = target[1];
 	} else {
 		throw new TypeError(ERROR_MESSAGES.INV_V2_TARG);
 	}
@@ -56,7 +56,7 @@ export function lerp<D extends Vec2Param>(target: Vec2Param, value: Vec2Param, k
 	}
 
 	if (typeof dest !== "undefined") {
-		if (!isVec2Array(dest) && !isVec2Object(dest)) {
+		if (!isVec2Object(dest) && !isVec2Array(dest)) {
 			throw new TypeError(ERROR_MESSAGES.INV_V2_DEST);
 		}
 	}

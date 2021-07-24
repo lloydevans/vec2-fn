@@ -1,0 +1,105 @@
+import { ERROR_MESSAGES } from "../constants/error-messages";
+import { ZERO } from "../constants/zero";
+import { testSingleVecSig } from "../test/utils";
+import { Vec2 } from "../types/vec2";
+import { round } from "./round";
+import { toArray } from "./to-array";
+
+describe(round.name, () => {
+	it("should return inferred types", () => {
+		testSingleVecSig(round);
+	});
+
+	it("should throw invalid input", () => {
+		const dest: Vec2 = { x: 0, y: 0 };
+		const vec1: Vec2 = { x: -1, y: -1 };
+		expect(() => round(null as any, dest)).toThrowError(ERROR_MESSAGES.INV_V2);
+		expect(() => round(vec1, null as any)).toThrowError(ERROR_MESSAGES.INV_V2_DEST);
+	});
+
+	it("should round values", () => {
+		expect(round({ x: 0.9, y: 1 + 0.0000001 })).toEqual({ x: 1, y: 1 });
+	});
+
+	it("should modify destination", () => {
+		const vec = { x: -1.1, y: 1.1 };
+		const dest = { x: 0, y: 0 };
+		round(vec, dest);
+
+		expect(vec).toEqual({ x: -1.1, y: 1.1 });
+		expect(dest).toEqual({ x: -1, y: 1 });
+	});
+
+	it("should return target", () => {
+		const vec1 = { x: -1, y: -1 };
+		const result = round(vec1);
+		expect(result).toBe(vec1);
+	});
+
+	it("should return destination", () => {
+		const vec1 = { x: -1, y: -1 };
+		const dest = { x: 0, y: 0 };
+		const result = round(vec1, dest);
+		expect(result).toBe(dest);
+	});
+
+	it("should modify instance", () => {
+		const vec = { x: 0.1, y: 0.1 };
+		round(vec);
+
+		expect(vec).toEqual({ x: 0, y: 0 });
+	});
+
+	it("should modify destination", () => {
+		const vec1 = { x: 0.1, y: 0.1 };
+		const dest = { x: 0, y: 0 };
+		round(vec1, dest);
+
+		expect(vec1).toEqual({ x: 0.1, y: 0.1 });
+		expect(dest).toEqual({ x: 0, y: 0 });
+	});
+
+	it("should accept array", () => {
+		const vec1: [number, number] = [0.1, 0.1];
+		const result = round(vec1);
+
+		expect(result).toBe(vec1);
+		expect(result).toEqual([0, 0]);
+	});
+
+	it("should accept: object, array", () => {
+		const vec1 = { x: 0.1, y: 0.1 };
+		const dest: [number, number] = [0, 0];
+		const result = round(vec1, dest);
+
+		expect(result).toBe(dest);
+		expect(result).toEqual(toArray(ZERO));
+	});
+
+	it("should accept: object, object", () => {
+		const vec1 = { x: 0.1, y: 0.1 };
+		const dest = { x: 0, y: 0 };
+		const result = round(vec1, dest);
+
+		expect(result).toBe(dest);
+		expect(result).toEqual(ZERO);
+	});
+
+	it("should accept: array, array", () => {
+		const vec1: [number, number] = [0.1, 0.1];
+		const dest: [number, number] = [0, 0];
+		const result = round(vec1, dest);
+
+		expect(result).toBe(dest);
+		expect(result).toEqual(toArray(ZERO));
+	});
+
+	it("should accept: array, object", () => {
+		const vec1 = { x: 0.1, y: 0.1 };
+		const dest = { x: 0, y: 0 };
+		const result = round(vec1, dest);
+
+		expect(result).toBe(dest);
+		expect(result).toEqual(ZERO);
+	});
+});
