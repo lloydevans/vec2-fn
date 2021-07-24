@@ -27,12 +27,15 @@ export function _performOperand<D extends Vec2Param>(op: Operand, target: Vec2Pa
 export function _performOperand<D extends Vec2Param>(op: Operand, target: Vec2Param | number, value: Vec2Param | number, dest?: D): unknown {
 	let tX: number;
 	let tY: number;
-	if (isVec2LikeArray(target)) {
-		tX = target[0];
-		tY = target[1];
+	if (typeof target === "number") {
+		tX = target;
+		tY = target;
 	} else if (isVec2LikeObject(target)) {
 		tX = target.x;
 		tY = target.y;
+	} else if (isVec2LikeArray(target)) {
+		tX = target[0];
+		tY = target[1];
 	} else {
 		throw new TypeError(ERROR_MESSAGES.INV_V2_TARG);
 	}
@@ -42,66 +45,19 @@ export function _performOperand<D extends Vec2Param>(op: Operand, target: Vec2Pa
 	if (typeof value === "number") {
 		vX = value;
 		vY = value;
-	} else if (isVec2LikeArray(value)) {
-		vX = value[0];
-		vY = value[1];
 	} else if (isVec2LikeObject(value)) {
 		vX = value.x;
 		vY = value.y;
+	} else if (isVec2LikeArray(value)) {
+		vX = value[0];
+		vY = value[1];
 	} else {
 		throw new TypeError(ERROR_MESSAGES.INV_V2_VAL);
 	}
 
-	if (typeof dest !== "undefined") {
-		if (!isVec2LikeArray(dest) && !isVec2LikeObject(dest)) {
-			throw new TypeError(ERROR_MESSAGES.INV_V2_DEST);
-		}
-	}
+	const _dest = typeof dest === "undefined" ? target : dest;
 
-	const _dest = dest ?? target;
-
-	if (isVec2LikeArray(_dest)) {
-		switch (op) {
-			case "+":
-				_dest[0] = _toPrecision(tX + vX);
-				_dest[1] = _toPrecision(tY + vY);
-				break;
-
-			case "-":
-				_dest[0] = _toPrecision(tX - vX);
-				_dest[1] = _toPrecision(tY - vY);
-				break;
-
-			case "*":
-				_dest[0] = _toPrecision(tX * vX);
-				_dest[1] = _toPrecision(tY * vY);
-				break;
-
-			case "/":
-				if (vX === 0 || vY === 0) {
-					throw new Error(ERROR_MESSAGES.DIVIDE_BY_ZERO);
-				}
-				_dest[0] = _toPrecision(tX / vX);
-				_dest[1] = _toPrecision(tY / vY);
-				break;
-
-			case "%":
-				if (vX === 0 || vY === 0) {
-					throw new Error(ERROR_MESSAGES.DIVIDE_BY_ZERO);
-				}
-				_dest[0] = _toPrecision(tX % vX);
-				_dest[1] = _toPrecision(tY % vY);
-				break;
-
-			case "-%":
-				if (vX === 0 || vY === 0) {
-					throw new Error(ERROR_MESSAGES.DIVIDE_BY_ZERO);
-				}
-				_dest[0] = _toPrecision(_modoValue(tX, vX));
-				_dest[1] = _toPrecision(_modoValue(tY, vY));
-				break;
-		}
-	} else if (isVec2LikeObject(_dest)) {
+	if (isVec2LikeObject(_dest)) {
 		switch (op) {
 			case "+":
 				_dest.x = _toPrecision(tX + vX);
@@ -142,6 +98,49 @@ export function _performOperand<D extends Vec2Param>(op: Operand, target: Vec2Pa
 				_dest.y = _toPrecision(_modoValue(tY, vY));
 				break;
 		}
+	} else if (isVec2LikeArray(_dest)) {
+		switch (op) {
+			case "+":
+				_dest[0] = _toPrecision(tX + vX);
+				_dest[1] = _toPrecision(tY + vY);
+				break;
+
+			case "-":
+				_dest[0] = _toPrecision(tX - vX);
+				_dest[1] = _toPrecision(tY - vY);
+				break;
+
+			case "*":
+				_dest[0] = _toPrecision(tX * vX);
+				_dest[1] = _toPrecision(tY * vY);
+				break;
+
+			case "/":
+				if (vX === 0 || vY === 0) {
+					throw new Error(ERROR_MESSAGES.DIVIDE_BY_ZERO);
+				}
+				_dest[0] = _toPrecision(tX / vX);
+				_dest[1] = _toPrecision(tY / vY);
+				break;
+
+			case "%":
+				if (vX === 0 || vY === 0) {
+					throw new Error(ERROR_MESSAGES.DIVIDE_BY_ZERO);
+				}
+				_dest[0] = _toPrecision(tX % vX);
+				_dest[1] = _toPrecision(tY % vY);
+				break;
+
+			case "-%":
+				if (vX === 0 || vY === 0) {
+					throw new Error(ERROR_MESSAGES.DIVIDE_BY_ZERO);
+				}
+				_dest[0] = _toPrecision(_modoValue(tX, vX));
+				_dest[1] = _toPrecision(_modoValue(tY, vY));
+				break;
+		}
+	} else {
+		throw new TypeError(ERROR_MESSAGES.INV_V2_DEST);
 	}
 
 	return _dest;
