@@ -17,28 +17,25 @@ describe(max.name, () => {
 	});
 
 	it("should check max value", () => {
-		const dest1: Vec2 = { x: -1000, y: 99 };
-		const dest2: Vec2 = { x: -1000, y: 99 };
-		const dest3: Vec2 = { x: 1, y: 0 };
-		const vec1: Vec2 = { x: 0, y: -1 };
-		const vec2: Vec2 = { x: -10, y: 0 };
-		const vec3: Vec2Array = [0, 2.5];
+		const dest1: Vec2 = { x: 0, y: 0 };
+		const dest2: [number, number] = [0, 0];
+		const dest3: Vec2 = { x: 0, y: 0 };
 		const vec4: Vec2Array = [100, 1.1];
-		expect(max(dest1, vec1, vec2, vec3, vec4)).toEqual({ x: 100, y: 99 });
-		expect(max(dest2, vec1, vec2, vec3)).toEqual({ x: 0, y: 99 });
-		expect(max(dest3, vec1, vec2, vec3)).toEqual({ x: 1, y: 2.5 });
+		expect(max(dest1, { x: 0, y: -1 }, { x: -10, y: 0 }, [0, 2.5], vec4)).toEqual({ x: 100, y: 2.5 });
+		expect(max(dest2, { x: 0, y: -1 }, { x: -10, y: 0 }, [0, 2.5])).toEqual([0, 2.5]);
+		expect(max(dest3, { x: 0, y: -1 }, { x: -10, y: 0 }, [0, 2.5])).toEqual({ x: 0, y: 2.5 });
 	});
 
 	it("should accept mixture of types", () => {
-		const dest1: Vec2 = { x: -1000, y: 99 };
-		const dest2: [number, number] = [-1000, 99];
-		const dest3: Vec2 = { x: 1, y: 0 };
+		const dest1: Vec2 = { x: 0, y: 0 };
+		const dest2: [number, number] = [0, 0];
+		const dest3: Vec2 = { x: 0, y: 0 };
 		const vec1: [number, number] = [0, -1];
 		const vec2: Vec2 = { x: -10, y: 0 };
 		const vec3: Vec2Array = [0, 2.5];
 		const vec4: Vec2Array = [100, 1.1];
-		expect(max(dest1, vec1, vec2, vec3, vec4)).toEqual({ x: 100, y: 99 });
-		expect(max(dest2, vec1, vec2, vec3)).toEqual([0, 99]);
-		expect(max(dest3, vec1, vec2, vec3)).toEqual({ x: 1, y: 2.5 });
+		expect(max(dest1, vec1, vec2, vec3, vec4)).toEqual({ x: 100, y: 2.5 });
+		expect(max(dest2, vec1, vec2, vec3)).toEqual([0, 2.5]);
+		expect(max(dest3, vec1, vec2, vec3)).toEqual({ x: 0, y: 2.5 });
 	});
 });
