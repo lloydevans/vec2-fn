@@ -1,7 +1,7 @@
 import { ERROR_MESSAGES } from "../constants/error-messages";
 import { Vec2Param } from "../types/vec2-param";
-import { isVec2LikeArray } from "./is-vec2-like-array";
-import { isVec2LikeObject } from "./is-vec2-like-object";
+import { isVec2Array } from "./is-vec2-array";
+import { isVec2Object } from "./is-vec2-object";
 import { _toPrecision } from "./_to-precision";
 
 /**
@@ -28,10 +28,10 @@ export function rotate<D extends Vec2Param>(target: Vec2Param, angle: number, de
 
 	let tX: number;
 	let tY: number;
-	if (isVec2LikeObject(target)) {
+	if (isVec2Object(target)) {
 		tX = target.x;
 		tY = target.y;
-	} else if (isVec2LikeArray(target)) {
+	} else if (isVec2Array(target)) {
 		tX = target[0];
 		tY = target[1];
 	} else {
@@ -39,7 +39,7 @@ export function rotate<D extends Vec2Param>(target: Vec2Param, angle: number, de
 	}
 
 	if (typeof dest !== "undefined") {
-		if (!isVec2LikeArray(dest) && !isVec2LikeObject(dest)) {
+		if (!isVec2Array(dest) && !isVec2Object(dest)) {
 			throw new TypeError(ERROR_MESSAGES.INV_V2_DEST);
 		}
 	}
@@ -48,7 +48,7 @@ export function rotate<D extends Vec2Param>(target: Vec2Param, angle: number, de
 	const c = Math.cos(angle);
 	const s = Math.sin(angle);
 
-	if (isVec2LikeObject(_dest)) {
+	if (isVec2Object(_dest)) {
 		if (angle !== 0) {
 			_dest.x = _toPrecision(c * tX - s * tY);
 			_dest.y = _toPrecision(s * tX + c * tY);
@@ -56,7 +56,7 @@ export function rotate<D extends Vec2Param>(target: Vec2Param, angle: number, de
 			_dest.x = _toPrecision(tX);
 			_dest.y = _toPrecision(tY);
 		}
-	} else if (isVec2LikeArray(_dest)) {
+	} else if (isVec2Array(_dest)) {
 		if (angle !== 0) {
 			_dest[0] = _toPrecision(c * tX - s * tY);
 			_dest[1] = _toPrecision(s * tX + c * tY);

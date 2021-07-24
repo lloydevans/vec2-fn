@@ -1,7 +1,7 @@
 import { ERROR_MESSAGES } from "../constants/error-messages";
 import { Vec2Param } from "../types/vec2-param";
-import { isVec2LikeArray } from "./is-vec2-like-array";
-import { isVec2LikeObject } from "./is-vec2-like-object";
+import { isVec2Array } from "./is-vec2-array";
+import { isVec2Object } from "./is-vec2-object";
 
 /**
  * Calculate the dot product of two vectors.
@@ -16,20 +16,20 @@ export function dot(v1: Vec2Param, v2: Vec2Param): number {
 	let x2: number;
 	let y2: number;
 
-	if (isVec2LikeObject(v1)) {
+	if (isVec2Object(v1)) {
 		x1 = v1.x;
 		y1 = v1.y;
-	} else if (isVec2LikeArray(v1)) {
+	} else if (isVec2Array(v1)) {
 		x1 = v1[0];
 		y1 = v1[1];
 	} else {
 		throw new TypeError(ERROR_MESSAGES.INV_V2);
 	}
 
-	if (isVec2LikeObject(v2)) {
+	if (isVec2Object(v2)) {
 		x2 = v2.x;
 		y2 = v2.y;
-	} else if (isVec2LikeArray(v2)) {
+	} else if (isVec2Array(v2)) {
 		x2 = v2[0];
 		y2 = v2[1];
 	} else {

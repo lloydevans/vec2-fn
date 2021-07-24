@@ -1,7 +1,7 @@
 import { ERROR_MESSAGES } from "../constants/error-messages";
 import { Vec2Param } from "../types/vec2-param";
-import { isVec2LikeArray } from "./is-vec2-like-array";
-import { isVec2LikeObject } from "./is-vec2-like-object";
+import { isVec2Array } from "./is-vec2-array";
+import { isVec2Object } from "./is-vec2-object";
 import { _modoValue } from "./_modo-value";
 import { _toPrecision } from "./_to-precision";
 
@@ -30,10 +30,10 @@ export function _performOperand<D extends Vec2Param>(op: Operand, target: Vec2Pa
 	if (typeof target === "number") {
 		tX = target;
 		tY = target;
-	} else if (isVec2LikeObject(target)) {
+	} else if (isVec2Object(target)) {
 		tX = target.x;
 		tY = target.y;
-	} else if (isVec2LikeArray(target)) {
+	} else if (isVec2Array(target)) {
 		tX = target[0];
 		tY = target[1];
 	} else {
@@ -45,10 +45,10 @@ export function _performOperand<D extends Vec2Param>(op: Operand, target: Vec2Pa
 	if (typeof value === "number") {
 		vX = value;
 		vY = value;
-	} else if (isVec2LikeObject(value)) {
+	} else if (isVec2Object(value)) {
 		vX = value.x;
 		vY = value.y;
-	} else if (isVec2LikeArray(value)) {
+	} else if (isVec2Array(value)) {
 		vX = value[0];
 		vY = value[1];
 	} else {
@@ -57,7 +57,7 @@ export function _performOperand<D extends Vec2Param>(op: Operand, target: Vec2Pa
 
 	const _dest = typeof dest === "undefined" ? target : dest;
 
-	if (isVec2LikeObject(_dest)) {
+	if (isVec2Object(_dest)) {
 		switch (op) {
 			case "+":
 				_dest.x = _toPrecision(tX + vX);
@@ -98,7 +98,7 @@ export function _performOperand<D extends Vec2Param>(op: Operand, target: Vec2Pa
 				_dest.y = _toPrecision(_modoValue(tY, vY));
 				break;
 		}
-	} else if (isVec2LikeArray(_dest)) {
+	} else if (isVec2Array(_dest)) {
 		switch (op) {
 			case "+":
 				_dest[0] = _toPrecision(tX + vX);

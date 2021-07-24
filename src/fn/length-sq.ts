@@ -1,7 +1,7 @@
 import { ERROR_MESSAGES } from "../constants/error-messages";
 import { Vec2Param } from "../types/vec2-param";
-import { isVec2LikeArray } from "./is-vec2-like-array";
-import { isVec2LikeObject } from "./is-vec2-like-object";
+import { isVec2Array } from "./is-vec2-array";
+import { isVec2Object } from "./is-vec2-object";
 
 /**
  * Get the squared length of a vector.
@@ -13,10 +13,10 @@ export function lengthSq(vec: Vec2Param): number {
 	let x: number;
 	let y: number;
 
-	if (isVec2LikeObject(vec)) {
+	if (isVec2Object(vec)) {
 		x = vec.x;
 		y = vec.y;
-	} else if (isVec2LikeArray(vec)) {
+	} else if (isVec2Array(vec)) {
 		x = vec[0];
 		y = vec[1];
 	} else {

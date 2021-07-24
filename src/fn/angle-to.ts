@@ -1,8 +1,8 @@
 import { ERROR_MESSAGES } from "../constants/error-messages";
 import { ZERO } from "../constants/zero";
 import { Vec2Param } from "../types/vec2-param";
-import { isVec2LikeArray } from "./is-vec2-like-array";
-import { isVec2LikeObject } from "./is-vec2-like-object";
+import { isVec2Array } from "./is-vec2-array";
+import { isVec2Object } from "./is-vec2-object";
 
 /**
  * Calculate angle.
@@ -14,10 +14,10 @@ import { isVec2LikeObject } from "./is-vec2-like-object";
 export function angleTo(to: Vec2Param, from: Vec2Param = ZERO): number {
 	let x2: number;
 	let y2: number;
-	if (isVec2LikeArray(to)) {
+	if (isVec2Array(to)) {
 		x2 = to[0];
 		y2 = to[1];
-	} else if (isVec2LikeObject(to)) {
+	} else if (isVec2Object(to)) {
 		x2 = to.x;
 		y2 = to.y;
 	} else {
@@ -26,10 +26,10 @@ export function angleTo(to: Vec2Param, from: Vec2Param = ZERO): number {
 
 	let x1: number;
 	let y1: number;
-	if (isVec2LikeArray(from)) {
+	if (isVec2Array(from)) {
 		x1 = from[0];
 		y1 = from[1];
-	} else if (isVec2LikeObject(from)) {
+	} else if (isVec2Object(from)) {
 		x1 = from.x;
 		y1 = from.y;
 	} else {

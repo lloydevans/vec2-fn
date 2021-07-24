@@ -1,7 +1,7 @@
 import { ERROR_MESSAGES } from "../constants/error-messages";
 import { Vec2Param } from "../types/vec2-param";
-import { isVec2LikeArray } from "./is-vec2-like-array";
-import { isVec2LikeObject } from "./is-vec2-like-object";
+import { isVec2Array } from "./is-vec2-array";
+import { isVec2Object } from "./is-vec2-object";
 import { _lerpValue } from "./_lerp-value";
 
 /**
@@ -30,10 +30,10 @@ export function lerp<D extends Vec2Param>(target: Vec2Param, value: Vec2Param, k
 
 	let tX: number;
 	let tY: number;
-	if (isVec2LikeArray(target)) {
+	if (isVec2Array(target)) {
 		tX = target[0];
 		tY = target[1];
-	} else if (isVec2LikeObject(target)) {
+	} else if (isVec2Object(target)) {
 		tX = target.x;
 		tY = target.y;
 	} else {
@@ -45,10 +45,10 @@ export function lerp<D extends Vec2Param>(target: Vec2Param, value: Vec2Param, k
 	if (typeof value === "number") {
 		vX = value;
 		vY = value;
-	} else if (isVec2LikeArray(value)) {
+	} else if (isVec2Array(value)) {
 		vX = value[0];
 		vY = value[1];
-	} else if (isVec2LikeObject(value)) {
+	} else if (isVec2Object(value)) {
 		vX = value.x;
 		vY = value.y;
 	} else {
@@ -56,17 +56,17 @@ export function lerp<D extends Vec2Param>(target: Vec2Param, value: Vec2Param, k
 	}
 
 	if (typeof dest !== "undefined") {
-		if (!isVec2LikeArray(dest) && !isVec2LikeObject(dest)) {
+		if (!isVec2Array(dest) && !isVec2Object(dest)) {
 			throw new TypeError(ERROR_MESSAGES.INV_V2_DEST);
 		}
 	}
 
 	const _dest = dest ?? target;
 
-	if (isVec2LikeObject(_dest)) {
+	if (isVec2Object(_dest)) {
 		_dest.x = _lerpValue(tX, vX, k);
 		_dest.y = _lerpValue(tY, vY, k);
-	} else if (isVec2LikeArray(_dest)) {
+	} else if (isVec2Array(_dest)) {
 		_dest[0] = _lerpValue(tX, vX, k);
 		_dest[1] = _lerpValue(tY, vY, k);
 	}

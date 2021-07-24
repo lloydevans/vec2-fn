@@ -1,7 +1,7 @@
 import { ERROR_MESSAGES } from "../constants/error-messages";
 import { Vec2Param } from "../types/vec2-param";
-import { isVec2LikeArray } from "./is-vec2-like-array";
-import { isVec2LikeObject } from "./is-vec2-like-object";
+import { isVec2Array } from "./is-vec2-array";
+import { isVec2Object } from "./is-vec2-object";
 
 /**
  * Negate a vector.
@@ -21,10 +21,10 @@ export function negate<D extends Vec2Param>(target: Vec2Param, dest: D): D;
 export function negate<D extends Vec2Param>(target: Vec2Param, dest?: D): unknown {
 	let tX: number;
 	let tY: number;
-	if (isVec2LikeArray(target)) {
+	if (isVec2Array(target)) {
 		tX = target[0];
 		tY = target[1];
-	} else if (isVec2LikeObject(target)) {
+	} else if (isVec2Object(target)) {
 		tX = target.x;
 		tY = target.y;
 	} else {
@@ -32,19 +32,19 @@ export function negate<D extends Vec2Param>(target: Vec2Param, dest?: D): unknow
 	}
 
 	if (typeof dest !== "undefined") {
-		if (!isVec2LikeArray(dest) && !isVec2LikeObject(dest)) {
+		if (!isVec2Array(dest) && !isVec2Object(dest)) {
 			throw new TypeError(ERROR_MESSAGES.INV_V2_DEST);
 		}
 	}
 
 	const _dest = dest ?? target;
 
-	if (isVec2LikeArray(_dest)) {
+	if (isVec2Array(_dest)) {
 		_dest[0] = -tX;
 		_dest[1] = -tY;
 	}
 
-	if (isVec2LikeObject(_dest)) {
+	if (isVec2Object(_dest)) {
 		_dest.x = -tX;
 		_dest.y = -tY;
 	}

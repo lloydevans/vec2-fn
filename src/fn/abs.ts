@@ -1,7 +1,7 @@
 import { ERROR_MESSAGES } from "../constants/error-messages";
 import { Vec2Param } from "../types/vec2-param";
-import { isVec2LikeArray } from "./is-vec2-like-array";
-import { isVec2LikeObject } from "./is-vec2-like-object";
+import { isVec2Array } from "./is-vec2-array";
+import { isVec2Object } from "./is-vec2-object";
 
 /**
  * Calculate vec2 absolute value.
@@ -35,10 +35,10 @@ export function abs<D extends Vec2Param>(target: Vec2Param, dest?: D): D;
 export function abs<D extends Vec2Param>(target: Vec2Param, dest?: D): unknown {
 	let tX: number;
 	let tY: number;
-	if (isVec2LikeObject(target)) {
+	if (isVec2Object(target)) {
 		tX = target.x;
 		tY = target.y;
-	} else if (isVec2LikeArray(target)) {
+	} else if (isVec2Array(target)) {
 		tX = target[0];
 		tY = target[1];
 	} else {
@@ -51,10 +51,10 @@ export function abs<D extends Vec2Param>(target: Vec2Param, dest?: D): unknown {
 
 	const _dest = dest ?? target;
 
-	if (isVec2LikeArray(_dest)) {
+	if (isVec2Array(_dest)) {
 		_dest[0] = Math.abs(tX);
 		_dest[1] = Math.abs(tY);
-	} else if (isVec2LikeObject(_dest)) {
+	} else if (isVec2Object(_dest)) {
 		_dest.x = Math.abs(tX);
 		_dest.y = Math.abs(tY);
 	} else {
